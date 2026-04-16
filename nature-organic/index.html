@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raymond Ariwoola — Nature Portfolio</title>
+  <meta name="description" content="Strategic People & Culture Leader with 10+ years of experience.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232d5016'/><text x='50' y='68' font-family='Arial' font-size='48' font-weight='bold' text-anchor='middle' fill='%23e8dcc8'>RA</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Nunito+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Leaf Particles Canvas -->
+  <canvas id="leafCanvas"></canvas>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">🌿 RA</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Journey</a></li>
+        <li><a href="#skills">Growth</a></li>
+        <li><a href="#education">Roots</a></li>
+        <li><a href="#portfolio">Harvest</a></li>
+        <li><a href="#contact">Connect</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Theme"><div class="theme-toggle__icon"></div></button>
+        <button class="nav__menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="theme-palette" id="themePalette">
+      <button class="theme-swatch theme-swatch--navy" data-set-theme="navy" title="Deep Forest"></button>
+      <button class="theme-swatch theme-swatch--dark" data-set-theme="dark" title="Midnight Garden"></button>
+      <button class="theme-swatch theme-swatch--light" data-set-theme="light" title="Morning Dew"></button>
+      <button class="theme-swatch theme-swatch--vibrant" data-set-theme="vibrant" title="Tropical"></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a><a href="#experience">Journey</a>
+    <a href="#skills">Growth</a><a href="#education">Roots</a>
+    <a href="#portfolio">Harvest</a><a href="#contact">Connect</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <svg class="hero__wave hero__wave--1" viewBox="0 0 1440 320" preserveAspectRatio="none"><path d="M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,128C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L0,320Z" fill="var(--wave-1)"/></svg>
+      <svg class="hero__wave hero__wave--2" viewBox="0 0 1440 320" preserveAspectRatio="none"><path d="M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,234.7C672,245,768,235,864,218.7C960,203,1056,181,1152,181.3C1248,181,1344,203,1392,213.3L1440,224L1440,320L0,320Z" fill="var(--wave-2)"/></svg>
+    </div>
+    <div class="hero__content">
+      <p class="hero__label">🌱 Welcome to my garden</p>
+      <h1 class="hero__name">Raymond<br>Ariwoola</h1>
+      <p class="hero__role">People & Culture Leader · Dubai, UAE</p>
+      <div class="hero__cta">
+        <a href="#about" class="btn btn--primary">Explore</a>
+        <a href="#contact" class="btn btn--outline">Connect</a>
+      </div>
+    </div>
+    <div class="hero__scroll"><div class="hero__scroll-leaf">🍃</div></div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <svg class="section-divider" viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,100 720,0 1080,60 C1260,80 1360,40 1440,50 L1440,0 L0,0 Z" fill="var(--bg-alt)"/></svg>
+    <div class="container">
+      <div class="section-header reveal-grow">
+        <span class="section__label">🌿 About</span>
+        <h2 class="section__title">The Story of Growth</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__photo reveal-grow">
+          <div class="organic-card about__photo-inner">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>Photo coming soon</span>
+          </div>
+        </div>
+        <div class="about__text reveal-grow">
+          <p>I'm a Strategic People &amp; Culture Leader with over a decade of experience driving enterprise-wide transformation across people enablement, knowledge management, learning &amp; development, and purpose-led engagement. Based in Dubai, I specialize in designing and executing frameworks that unify leadership, enhance organizational health, and translate strategy into meaningful employee experiences.</p>
+          <div class="about__stats">
+            <div class="organic-card stat"><div class="stat__number" data-count="10">0</div><div class="stat__label">Years Growing</div></div>
+            <div class="organic-card stat"><div class="stat__number" data-count="10000">0</div><div class="stat__label">Lives Touched</div></div>
+            <div class="organic-card stat"><div class="stat__number" data-count="100">0</div><div class="stat__label">Paths Created</div></div>
+            <div class="organic-card stat"><div class="stat__number" data-count="240">0</div><div class="stat__label">Solutions Bloomed</div></div>
+          </div>
+          <div class="about__languages">
+            <span class="leaf-pill">🌐 English <small>(Full Professional)</small></span>
+            <span class="leaf-pill">🌐 Yoruba <small>(Professional Working)</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience section section--alt" id="experience">
+    <div class="container">
+      <div class="section-header reveal-grow">
+        <span class="section__label">🌳 Journey</span>
+        <h2 class="section__title">Growth Rings</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline__trunk"></div>
+        <div class="timeline__item reveal-grow">
+          <div class="timeline__branch"></div>
+          <div class="organic-card timeline__card">
+            <span class="timeline__date">Sep 2024 — Present</span>
+            <h3>Knowledge Office Lead, People &amp; Culture</h3>
+            <p class="timeline__company">Emirates NBD · Dubai, UAE</p>
+            <ul><li>Change management for 10,000+ staff</li><li>Deployed Gen AI for productivity</li><li>Reduced search time 3min → 30sec</li><li>KPI dashboards ensuring ROI</li></ul>
+          </div>
+        </div>
+        <div class="timeline__item timeline__item--right reveal-grow">
+          <div class="timeline__branch"></div>
+          <div class="organic-card timeline__card">
+            <span class="timeline__date">Feb 2023 — Sep 2024</span>
+            <h3>Content &amp; Knowledge Experience Lead</h3>
+            <p class="timeline__company">Emirates NBD · Dubai, UAE</p>
+            <ul><li>Led 20+ enterprise knowledge initiatives</li><li>75% content utilization increase</li><li>50+ engagement activities launched</li><li>KM training for 2,500+ staff</li></ul>
+          </div>
+        </div>
+        <div class="timeline__item reveal-grow">
+          <div class="timeline__branch"></div>
+          <div class="organic-card timeline__card">
+            <span class="timeline__date">Jan 2019 — Jan 2023</span>
+            <h3>CX Digital Transformation Lead</h3>
+            <p class="timeline__company">Emirates NBD · Dubai, UAE</p>
+            <ul><li>Owned OCOP: website, chatbot, IVR</li><li>Website revamp for 240+ services</li><li>100+ digital customer journeys</li><li>Cross-functional bridge builder</li></ul>
+          </div>
+        </div>
+        <div class="timeline__item timeline__item--right reveal-grow">
+          <div class="timeline__branch"></div>
+          <div class="organic-card timeline__card">
+            <span class="timeline__date">Mar 2021 — Sep 2022</span>
+            <h3>Training Manager, L&amp;D</h3>
+            <p class="timeline__company">Emirates NBD <span class="badge-leaf">Concurrent</span></p>
+            <ul><li>Training for system implementations</li><li>Instructional design materials</li><li>L&amp;D aligned with business priorities</li></ul>
+          </div>
+        </div>
+        <div class="timeline__item reveal-grow">
+          <div class="timeline__branch"></div>
+          <div class="organic-card timeline__card">
+            <span class="timeline__date">Jun 2015 — Jan 2019</span>
+            <h3>Senior Subject Matter Expert</h3>
+            <p class="timeline__company">Emirates NBD (Tanfeeth)</p>
+            <ul><li>Mentored on technical tools</li><li>Authored guides and knowledge materials</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <svg class="section-divider" viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,60 C480,0 960,100 1440,40 L1440,0 L0,0 Z" fill="var(--bg-alt)"/></svg>
+    <div class="container">
+      <div class="section-header reveal-grow">
+        <span class="section__label">🌱 Growth</span>
+        <h2 class="section__title">Cultivated Skills</h2>
+      </div>
+      <div class="skills__grid">
+        <div class="organic-card skills__category reveal-grow">
+          <h3>🧠 Knowledge &amp; Learning</h3>
+          <div class="skills__tags">
+            <span class="leaf-pill leaf-pill--featured">Knowledge Management Strategy</span>
+            <span class="leaf-pill leaf-pill--featured">Knowledge Base Design &amp; Maintenance</span>
+            <span class="leaf-pill">Digital Learning Solutions</span>
+            <span class="leaf-pill">Blended Learning</span>
+            <span class="leaf-pill">Instructional Design</span>
+            <span class="leaf-pill">Curriculum Development</span>
+            <span class="leaf-pill">Learning Needs Analysis</span>
+          </div>
+        </div>
+        <div class="organic-card skills__category reveal-grow">
+          <h3>🚀 Strategy &amp; Leadership</h3>
+          <div class="skills__tags">
+            <span class="leaf-pill">L&D Strategy</span>
+            <span class="leaf-pill leaf-pill--featured">Change Management &amp; Process Improvement</span>
+            <span class="leaf-pill">Agile PM</span>
+            <span class="leaf-pill">Waterfall PM</span>
+            <span class="leaf-pill">Stakeholder Engagement</span>
+            <span class="leaf-pill">KPI Tracking</span>
+          </div>
+        </div>
+        <div class="organic-card skills__category reveal-grow">
+          <h3>💡 Digital &amp; Technical</h3>
+          <div class="skills__tags">
+            <span class="leaf-pill">SharePoint</span><span class="leaf-pill">ServiceNow</span>
+            <span class="leaf-pill">Sitecore CMS</span><span class="leaf-pill">Oracle Cloud</span>
+            <span class="leaf-pill">Python</span><span class="leaf-pill">JavaScript</span>
+            <span class="leaf-pill">Data Analysis</span><span class="leaf-pill">ITIL</span>
+          </div>
+        </div>
+        <div class="organic-card skills__category reveal-grow">
+          <h3>🎯 Customer &amp; Experience</h3>
+          <div class="skills__tags">
+            <span class="leaf-pill">CX Design</span><span class="leaf-pill">Digital Transformation</span>
+            <span class="leaf-pill">Content Strategy</span><span class="leaf-pill">Training Facilitation</span>
+            <span class="leaf-pill">Service Excellence</span><span class="leaf-pill">Omni-Channel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="education section section--alt" id="education">
+    <div class="container">
+      <div class="section-header reveal-grow">
+        <span class="section__label">🌳 Roots</span>
+        <h2 class="section__title">Deep Foundations</h2>
+      </div>
+      <div class="education__grid">
+        <div class="organic-card education__card reveal-grow"><div class="education__icon">🎓</div><h3>MSc in Computer Science</h3><p>IUBH University</p><span class="education__status">In Progress</span></div>
+        <div class="organic-card education__card reveal-grow"><div class="education__icon">🎓</div><h3>BSc in Computer Science</h3><p>Olabisi Onabanjo University</p><span class="education__status">Completed</span></div>
+        <div class="organic-card education__card reveal-grow"><div class="education__icon">📜</div><h3>CS50: Intro to CS</h3><p>Harvard (via EDX)</p><span class="education__status">Completed</span></div>
+        <div class="organic-card education__card reveal-grow"><div class="education__icon">📜</div><h3>Associate's in CS</h3><p>Lagos City Computer College</p><span class="education__status">Completed</span></div>
+      </div>
+      <div class="education__extras reveal-grow">
+        <div class="organic-card education__extra-group">
+          <h3>🏅 Certifications</h3>
+          <div class="education__extra-items">
+            <span class="leaf-pill">Python: Data Analysis</span>
+            <span class="leaf-pill">Analytics Using Python — Masterclass</span>
+            <span class="leaf-pill">Python Essential Training</span>
+            <span class="leaf-pill">Certified Associate</span>
+            <span class="leaf-pill">Certificate of Gratitude</span>
+          </div>
+        </div>
+        <div class="organic-card education__extra-group">
+          <h3>🏆 Honors &amp; Awards</h3>
+          <div class="education__extra-items">
+            <span class="leaf-pill leaf-pill--featured">Aspire Awards — Emirates NBD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio section" id="portfolio">
+    <svg class="section-divider" viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,30 C360,90 720,10 1080,70 C1260,90 1360,50 1440,60 L1440,0 L0,0 Z" fill="var(--bg-alt)"/></svg>
+    <div class="container">
+      <div class="section-header reveal-grow">
+        <span class="section__label">🌻 Harvest</span>
+        <h2 class="section__title">Fruits of Labor</h2>
+      </div>
+      <div class="portfolio__grid">
+        <div class="organic-card portfolio__card reveal-grow">
+          <div class="portfolio__icon">🌐</div><h3>Omni-Channel Optimization</h3>
+          <p>Website, chatbot, IVR — end-to-end customer experience transformation.</p>
+          <div class="portfolio__tags"><span class="leaf-pill">Digital Strategy</span><span class="leaf-pill">CX</span></div>
+        </div>
+        <div class="organic-card portfolio__card reveal-grow">
+          <div class="portfolio__icon">📚</div><h3>Knowledge Platform</h3>
+          <p>Search time from 3min to 30sec across 10,000+ employees.</p>
+          <div class="portfolio__tags"><span class="leaf-pill">KM</span><span class="leaf-pill">IA</span></div>
+        </div>
+        <div class="organic-card portfolio__card reveal-grow">
+          <div class="portfolio__icon">🤖</div><h3>Gen AI Suite</h3>
+          <p>Front-line productivity tools enhancing customer interactions.</p>
+          <div class="portfolio__tags"><span class="leaf-pill">Gen AI</span><span class="leaf-pill">Automation</span></div>
+        </div>
+        <div class="organic-card portfolio__card reveal-grow">
+          <div class="portfolio__icon">🎯</div><h3>Website Revamp</h3>
+          <p>Self-service adoption for 240+ services.</p>
+          <div class="portfolio__tags"><span class="leaf-pill">UX</span><span class="leaf-pill">Self-Service</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section section--alt" id="contact">
+    <div class="container">
+      <div class="section-header reveal-grow">
+        <span class="section__label">🌺 Connect</span>
+        <h2 class="section__title">Let's Grow Together</h2>
+      </div>
+      <div class="organic-card contact__content reveal-grow">
+        <p>Open to new opportunities, collaborations, and conversations around people strategy and growth.</p>
+        <div class="contact__links">
+          <a href="mailto:raymondariwoola@gmail.com" class="leaf-pill contact__link">📧 raymondariwoola@gmail.com</a>
+          <a href="https://www.linkedin.com/in/raym0ndy" target="_blank" rel="noopener noreferrer" class="leaf-pill contact__link">🔗 LinkedIn</a>
+          <a href="tel:+971521515432" class="leaf-pill contact__link">📱 +971 52 151 5432</a>
+        </div>
+        <a href="mailto:raymondariwoola@gmail.com" class="btn btn--primary">Send a Message</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container"><p>&copy; 2025 Raymond Ariwoola. Grown with <span class="footer__heart">♥</span> in Dubai.</p></div></footer>
+  <button class="back-to-top" id="backToTop" aria-label="Top"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg></button>
+  <script src="script.js"></script>
+</body>
+</html>

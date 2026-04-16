@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raymond Ariwoola — Matrix Portfolio</title>
+  <meta name="description" content="Strategic People & Culture Leader with 10+ years of experience.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23000'/><text x='50' y='68' font-family='Courier' font-size='48' font-weight='bold' text-anchor='middle' fill='%2300ff41'>RA</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Matrix Rain Canvas -->
+  <canvas id="matrixCanvas"></canvas>
+
+  <!-- CRT Overlay -->
+  <div class="crt-overlay"></div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">&gt;_ RA</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">/about</a></li>
+        <li><a href="#experience">/exp</a></li>
+        <li><a href="#skills">/skills</a></li>
+        <li><a href="#education">/edu</a></li>
+        <li><a href="#portfolio">/projects</a></li>
+        <li><a href="#contact">/contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Theme"><div class="theme-toggle__icon"></div></button>
+        <button class="nav__menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="theme-palette" id="themePalette">
+      <button class="theme-swatch theme-swatch--navy" data-set-theme="navy" title="Deep Blue"></button>
+      <button class="theme-swatch theme-swatch--dark" data-set-theme="dark" title="Matrix Green"></button>
+      <button class="theme-swatch theme-swatch--light" data-set-theme="light" title="Ghost Shell"></button>
+      <button class="theme-swatch theme-swatch--vibrant" data-set-theme="vibrant" title="Neon Hack"></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">/about</a><a href="#experience">/exp</a>
+    <a href="#skills">/skills</a><a href="#education">/edu</a>
+    <a href="#portfolio">/projects</a><a href="#contact">/contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <div class="hero__terminal">
+        <div class="terminal__header"><span class="terminal__dot terminal__dot--red"></span><span class="terminal__dot terminal__dot--yellow"></span><span class="terminal__dot terminal__dot--green"></span><span class="terminal__title">system.init</span></div>
+        <div class="terminal__body">
+          <p class="terminal__line"><span class="t-prompt">&gt;</span> <span class="t-keyword">init</span> profile --user <span class="t-string">"Raymond Ariwoola"</span></p>
+          <p class="terminal__line"><span class="t-prompt">&gt;</span> <span class="t-comment">// loading identity...</span></p>
+        </div>
+      </div>
+      <h1 class="hero__name glitch" data-text="RAYMOND ARIWOOLA">RAYMOND ARIWOOLA</h1>
+      <p class="hero__role"><span class="hero__role-cursor">|</span> People &amp; Culture Leader · Dubai, UAE</p>
+      <div class="hero__cta">
+        <a href="#about" class="btn btn--primary">Access Profile</a>
+        <a href="#contact" class="btn btn--outline">Open Channel</a>
+      </div>
+    </div>
+    <div class="hero__scroll"><span class="hero__scroll-arrow">&darr;</span> scroll to decrypt</div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section__label">[01] ABOUT</span>
+        <h2 class="section__title">System Profile</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__avatar reveal">
+          <div class="holo-card about__avatar-inner">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" width="64" height="64"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span class="scanline-text">AVATAR LOADING</span>
+          </div>
+        </div>
+        <div class="about__text reveal">
+          <p>I'm a Strategic People &amp; Culture Leader with over a decade of experience driving enterprise-wide transformation across people enablement, knowledge management, learning &amp; development, and purpose-led engagement. Based in Dubai, I specialize in designing and executing frameworks that unify leadership, enhance organizational health, and translate strategy into meaningful employee experiences.</p>
+          <div class="about__stats">
+            <div class="holo-card stat"><div class="stat__value" data-count="10">0</div><div class="stat__key">YRS_EXP</div></div>
+            <div class="holo-card stat"><div class="stat__value" data-count="10000">0</div><div class="stat__key">USERS_IMPACTED</div></div>
+            <div class="holo-card stat"><div class="stat__value" data-count="100">0</div><div class="stat__key">JOURNEYS_MAPPED</div></div>
+            <div class="holo-card stat"><div class="stat__value" data-count="240">0</div><div class="stat__key">SOLUTIONS_DEPLOYED</div></div>
+          </div>
+          <div class="about__lang">
+            <span class="cyber-pill">lang.en <small>// Full Professional</small></span>
+            <span class="cyber-pill">lang.yo <small>// Professional Working</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section section--alt" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section__label">[02] EXPERIENCE</span>
+        <h2 class="section__title">System Log</h2>
+      </div>
+      <div class="exp__feed">
+        <div class="holo-card exp__entry reveal">
+          <div class="exp__meta"><span class="exp__date">[2024.09 — PRESENT]</span><span class="exp__status">● ACTIVE</span></div>
+          <h3>Knowledge Office Lead, People &amp; Culture</h3>
+          <p class="exp__org">EMIRATES_NBD // Dubai, UAE</p>
+          <ul><li>Change management protocols for 10,000+ nodes</li><li>Gen AI productivity deployment</li><li>Search latency: 3min → 30sec</li><li>KPI dashboards — real-time ROI monitoring</li></ul>
+        </div>
+        <div class="holo-card exp__entry reveal">
+          <div class="exp__meta"><span class="exp__date">[2023.02 — 2024.09]</span></div>
+          <h3>Content &amp; Knowledge Experience Lead</h3>
+          <p class="exp__org">EMIRATES_NBD // Dubai, UAE</p>
+          <ul><li>20+ enterprise knowledge pipelines</li><li>Content utilization +75%</li><li>50+ engagement operations</li><li>KM training: 2,500+ operatives</li></ul>
+        </div>
+        <div class="holo-card exp__entry reveal">
+          <div class="exp__meta"><span class="exp__date">[2019.01 — 2023.01]</span></div>
+          <h3>CX Digital Transformation Lead</h3>
+          <p class="exp__org">EMIRATES_NBD // Dubai, UAE</p>
+          <ul><li>OCOP: website, chatbot, IVR orchestration</li><li>240+ service endpoints revamped</li><li>100+ digital journeys deployed</li><li>Cross-functional bridge protocols</li></ul>
+        </div>
+        <div class="holo-card exp__entry reveal">
+          <div class="exp__meta"><span class="exp__date">[2021.03 — 2022.09]</span><span class="exp__tag">CONCURRENT</span></div>
+          <h3>Training Manager, L&amp;D</h3>
+          <p class="exp__org">EMIRATES_NBD</p>
+          <ul><li>System implementation training</li><li>Instructional design protocols</li><li>L&D aligned with mission parameters</li></ul>
+        </div>
+        <div class="holo-card exp__entry reveal">
+          <div class="exp__meta"><span class="exp__date">[2015.06 — 2019.01]</span></div>
+          <h3>Senior Subject Matter Expert</h3>
+          <p class="exp__org">EMIRATES_NBD (Tanfeeth)</p>
+          <ul><li>Mentored operatives on tech tools</li><li>Authored knowledge archives</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section__label">[03] SKILLS</span>
+        <h2 class="section__title">Core Modules</h2>
+      </div>
+      <div class="skills__grid">
+        <div class="holo-card skills__block reveal">
+          <h3>// Knowledge &amp; Learning</h3>
+          <div class="skills__tags">
+            <span class="cyber-pill cyber-pill--hot">Knowledge Management Strategy</span>
+            <span class="cyber-pill cyber-pill--hot">Knowledge Base Design &amp; Maintenance</span>
+            <span class="cyber-pill">Digital Learning Solutions</span>
+            <span class="cyber-pill">Blended Learning</span>
+            <span class="cyber-pill">Instructional Design</span>
+            <span class="cyber-pill">Curriculum Development</span>
+            <span class="cyber-pill">Learning Needs Analysis</span>
+          </div>
+        </div>
+        <div class="holo-card skills__block reveal">
+          <h3>// Strategy &amp; Leadership</h3>
+          <div class="skills__tags">
+            <span class="cyber-pill">L&D Strategy</span>
+            <span class="cyber-pill cyber-pill--hot">Change Management &amp; Process Improvement</span>
+            <span class="cyber-pill">Agile PM</span>
+            <span class="cyber-pill">Waterfall PM</span>
+            <span class="cyber-pill">Stakeholder Engagement</span>
+            <span class="cyber-pill">KPI Tracking</span>
+          </div>
+        </div>
+        <div class="holo-card skills__block reveal">
+          <h3>// Digital &amp; Technical</h3>
+          <div class="skills__tags">
+            <span class="cyber-pill">SharePoint</span><span class="cyber-pill">ServiceNow</span>
+            <span class="cyber-pill">Sitecore CMS</span><span class="cyber-pill">Oracle Cloud</span>
+            <span class="cyber-pill">Python</span><span class="cyber-pill">JavaScript</span>
+            <span class="cyber-pill">Data Analysis</span><span class="cyber-pill">ITIL</span>
+          </div>
+        </div>
+        <div class="holo-card skills__block reveal">
+          <h3>// Customer &amp; Experience</h3>
+          <div class="skills__tags">
+            <span class="cyber-pill">CX Design</span><span class="cyber-pill">Digital Transformation</span>
+            <span class="cyber-pill">Content Strategy</span><span class="cyber-pill">Training Facilitation</span>
+            <span class="cyber-pill">Service Excellence</span><span class="cyber-pill">Omni-Channel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section section--alt" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section__label">[04] EDUCATION</span>
+        <h2 class="section__title">Training Archives</h2>
+      </div>
+      <div class="edu__grid">
+        <div class="holo-card edu__card reveal"><div class="edu__badge">🎓</div><h3>MSc Computer Science</h3><p>IUBH University</p><span class="edu__status edu__status--active">IN_PROGRESS</span></div>
+        <div class="holo-card edu__card reveal"><div class="edu__badge">🎓</div><h3>BSc Computer Science</h3><p>Olabisi Onabanjo University</p><span class="edu__status">COMPLETED</span></div>
+        <div class="holo-card edu__card reveal"><div class="edu__badge">📜</div><h3>CS50: Intro to CS</h3><p>Harvard (EDX)</p><span class="edu__status">COMPLETED</span></div>
+        <div class="holo-card edu__card reveal"><div class="edu__badge">📜</div><h3>Associate's in CS</h3><p>Lagos City Computer College</p><span class="edu__status">COMPLETED</span></div>
+      </div>
+      <div class="edu__extras reveal">
+        <div class="holo-card edu__extra">
+          <h3>// Certifications</h3>
+          <div class="edu__pills"><span class="cyber-pill">Python: Data Analysis</span><span class="cyber-pill">Analytics Using Python — Masterclass</span><span class="cyber-pill">Python Essential Training</span><span class="cyber-pill">Certified Associate</span><span class="cyber-pill">Certificate of Gratitude</span></div>
+        </div>
+        <div class="holo-card edu__extra">
+          <h3>// Awards</h3>
+          <div class="edu__pills"><span class="cyber-pill cyber-pill--hot">Aspire Awards — Emirates NBD</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section__label">[05] PROJECTS</span>
+        <h2 class="section__title">Deployed Systems</h2>
+      </div>
+      <div class="proj__grid">
+        <div class="holo-card proj__card reveal">
+          <div class="proj__icon">🌐</div><h3>OCOP — Omni-Channel</h3>
+          <p>Website, chatbot, IVR — end-to-end CX transformation.</p>
+          <div class="proj__tags"><span class="cyber-pill">Digital Strategy</span><span class="cyber-pill">CX</span></div>
+        </div>
+        <div class="holo-card proj__card reveal">
+          <div class="proj__icon">📚</div><h3>Knowledge Platform</h3>
+          <p>Search latency 3min → 30sec across 10K+ users.</p>
+          <div class="proj__tags"><span class="cyber-pill">KM</span><span class="cyber-pill">IA</span></div>
+        </div>
+        <div class="holo-card proj__card reveal">
+          <div class="proj__icon">🤖</div><h3>Gen AI Suite</h3>
+          <p>Front-line productivity tools enhancing operations.</p>
+          <div class="proj__tags"><span class="cyber-pill">Gen AI</span><span class="cyber-pill">Automation</span></div>
+        </div>
+        <div class="holo-card proj__card reveal">
+          <div class="proj__icon">🎯</div><h3>Website &amp; Self-Service</h3>
+          <p>Self-service adoption for 240+ services.</p>
+          <div class="proj__tags"><span class="cyber-pill">UX</span><span class="cyber-pill">Self-Service</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section__label">[06] CONTACT</span>
+        <h2 class="section__title">Open Channel</h2>
+      </div>
+      <div class="holo-card contact__box reveal">
+        <p>Encrypted channels available. Reach out for collaborations, opportunities, or a conversation about people strategy.</p>
+        <div class="contact__links">
+          <a href="mailto:raymondariwoola@gmail.com" class="cyber-pill contact__link">📧 raymondariwoola@gmail.com</a>
+          <a href="https://www.linkedin.com/in/raym0ndy" target="_blank" rel="noopener noreferrer" class="cyber-pill contact__link">🔗 linkedin.com/in/raym0ndy</a>
+          <a href="tel:+971521515432" class="cyber-pill contact__link">📱 +971 52 151 5432</a>
+        </div>
+        <a href="mailto:raymondariwoola@gmail.com" class="btn btn--primary">Transmit Message</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container"><p>&copy; 2025 Raymond Ariwoola. &gt;_ Compiled in Dubai.</p></div></footer>
+  <button class="back-to-top" id="backToTop" aria-label="Top"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg></button>
+  <script src="script.js"></script>
+</body>
+</html>
