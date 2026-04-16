@@ -264,15 +264,16 @@ body {
 .btn--glass:hover { border-color: var(--accent); }
 
 .hero__floating-cards {
-  position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  position: absolute; inset: 0; pointer-events: none; z-index: 3;
 }
 .hero__float-card {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y)));
-  padding: 0.8rem 1.5rem;
-  font-size: 0.85rem; font-weight: 600;
+  padding: 1rem 1.8rem;
+  font-size: 0.9rem; font-weight: 600;
   color: var(--accent);
+  white-space: nowrap;
   animation: floatCard 8s ease-in-out infinite;
   animation-delay: var(--delay);
 }
