@@ -497,6 +497,27 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--text-3);
 }
 
+.about__languages {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.about__lang {
+  font-size: 0.85rem;
+  color: var(--text-2);
+}
+
+.about__lang small {
+  color: var(--text-3);
+  font-size: 0.72rem;
+}
+
+.about__lang-divider {
+  color: var(--text-3);
+}
+
 /* ===========================
    EXPERIENCE
    =========================== */
@@ -617,6 +638,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-color: var(--text-3);
 }
 
+.skill-pill--featured {
+  color: var(--text);
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
 /* ===========================
    EDUCATION
    =========================== */
@@ -652,6 +679,38 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  color: var(--accent);
+}
+
+.edu-extras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 48px;
+  padding-top: 48px;
+  border-top: 1px solid var(--line);
+}
+
+.edu-extras__group .label {
+  margin-bottom: 16px;
+}
+
+.edu-extras__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.edu-extras__item {
+  font-size: 0.78rem;
+  padding: 6px 16px;
+  border-radius: 100px;
+  border: 1px solid var(--line);
+  color: var(--text-2);
+}
+
+.edu-extras__item--award {
+  border-color: var(--accent);
   color: var(--accent);
 }
 

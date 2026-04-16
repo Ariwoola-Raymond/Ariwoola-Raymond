@@ -651,6 +651,34 @@ h1, h2, h3 {
   letter-spacing: 1px;
 }
 
+.about__languages {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.about__languages-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-1);
+}
+
+.about__lang {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding-left: 16px;
+  border-left: 1px solid var(--divider);
+}
+
+.about__lang small {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
 /* ===========================
    EXPERIENCE
    =========================== */
@@ -804,6 +832,12 @@ h1, h2, h3 {
   color: var(--accent-1);
 }
 
+.skills__tag--featured {
+  border-color: var(--accent-1);
+  color: var(--accent-1);
+  font-weight: 600;
+}
+
 /* ===========================
    EDUCATION
    =========================== */
@@ -848,6 +882,45 @@ h1, h2, h3 {
 .edu-item__school {
   font-size: 0.88rem;
   color: var(--text-secondary);
+}
+
+.education__extras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.education__extra-block {
+  padding: 28px 0 0;
+  border-top: 1px solid var(--divider);
+}
+
+.education__extra-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.education__extra-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.education__extra-item {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding-left: 16px;
+  border-left: 2px solid var(--divider);
+  line-height: 1.6;
+}
+
+.education__extra-item--award {
+  border-left-color: var(--accent-1);
+  color: var(--accent-1);
+  font-weight: 600;
 }
 
 /* ===========================

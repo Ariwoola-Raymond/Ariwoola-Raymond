@@ -750,6 +750,12 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 
 .tag:hover { border-color: var(--accent); }
 
+.tag--featured {
+  border-color: var(--accent);
+  color: var(--heading);
+  background: var(--accent-dim);
+}
+
 /* --- EDUCATION ----------------------------------------------------- */
 .edu-list {
   display: flex;
@@ -804,6 +810,30 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .edu-item__school {
   font-size: .75rem;
   color: var(--text-muted);
+}
+
+.edu-extras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.edu-extras__block {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.edu-extras__block .comment {
+  margin-bottom: 12px;
+}
+
+.edu-extras__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 /* --- PORTFOLIO ----------------------------------------------------- */

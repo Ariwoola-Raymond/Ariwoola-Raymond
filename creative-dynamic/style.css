@@ -737,6 +737,35 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-muted);
 }
 
+.about__languages {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.about__languages-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.about__lang {
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 10px;
+  background: var(--badge-bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.about__lang small {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
 /* ===========================
    9. EXPERIENCE SECTION
    =========================== */
@@ -922,6 +951,13 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--badge-bg);
 }
 
+.skills__tag--featured {
+  border-color: var(--accent-1);
+  color: var(--text-primary);
+  background: var(--badge-bg);
+  font-weight: 500;
+}
+
 /* ===========================
    11. EDUCATION SECTION
    =========================== */
@@ -992,6 +1028,49 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.8rem;
   color: var(--badge-text);
   font-weight: 500;
+}
+
+.education__extras {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+
+.education__extra-group {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 24px 28px;
+}
+
+.education__extra-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.education__extra-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.education__extra-item {
+  font-size: 0.82rem;
+  padding: 6px 14px;
+  border-radius: 10px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.education__extra-item--award {
+  background: var(--badge-bg);
+  border-color: var(--accent-1);
+  color: var(--text-primary);
 }
 
 /* ===========================
