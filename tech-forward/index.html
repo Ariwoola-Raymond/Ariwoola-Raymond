@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raymond Ariwoola — Tech-Forward</title>
+  <meta name="description" content="Strategic People & Culture Leader with 10+ years driving enterprise-wide transformation.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='72' font-family='monospace' font-size='60' text-anchor='middle' fill='%2300ff41'>R</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">raymond.ariwoola</a>
+      <div class="nav__links" id="navLinks">
+        <a href="#about">about</a>
+        <a href="#experience">experience</a>
+        <a href="#skills">skills</a>
+        <a href="#education">education</a>
+        <a href="#portfolio">projects</a>
+        <a href="#contact">contact</a>
+      </div>
+      <div class="nav__right">
+        <button class="theme-btn" id="themeToggle" aria-label="Change theme">
+          <div class="theme-btn__icon"></div>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="palette" id="palette">
+      <button class="swatch swatch--navy" data-set-theme="navy" aria-label="Navy"></button>
+      <button class="swatch swatch--dark" data-set-theme="dark" aria-label="Dark"></button>
+      <button class="swatch swatch--light" data-set-theme="light" aria-label="Light"></button>
+      <button class="swatch swatch--vibrant" data-set-theme="vibrant" aria-label="Vibrant"></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">about</a>
+    <a href="#experience">experience</a>
+    <a href="#skills">skills</a>
+    <a href="#education">education</a>
+    <a href="#portfolio">projects</a>
+    <a href="#contact">contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero section" id="hero">
+    <div class="wrap">
+      <div class="hero__terminal reveal">
+        <div class="hero__bar">
+          <div class="hero__dot hero__dot--red"></div>
+          <div class="hero__dot hero__dot--yellow"></div>
+          <div class="hero__dot hero__dot--green"></div>
+          <span class="hero__bar-title">raymond@portfolio ~ %</span>
+        </div>
+        <div class="hero__code">
+          <div>
+            <span class="hero__prompt">$</span>
+            <span class="hero__cmd"> whoami</span>
+          </div>
+          <div class="hero__name-line" id="heroName">Raymond Ariwoola</div>
+          <div class="hero__output">
+            <span class="hero__output-line"><span class="accent">role:</span> Knowledge Office Lead, People &amp; Culture</span>
+            <span class="hero__output-line"><span class="accent">org:</span>&nbsp; Emirates NBD · Dubai, UAE</span>
+            <span class="hero__output-line"><span class="accent">focus:</span> Digital Transformation · Knowledge Management · CX</span>
+          </div>
+          <div style="margin-top: 20px;">
+            <span class="hero__prompt">$</span>
+            <span class="hero__cmd"> cat mission.txt</span>
+          </div>
+          <div class="hero__output" style="margin-top: 8px;">
+            Driving enterprise-wide transformation through people<br>
+            enablement, knowledge management, and purpose-led engagement.<span class="hero__cursor"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__actions reveal d2">
+        <a href="#about" class="btn btn--primary">./explore</a>
+        <a href="#contact" class="btn btn--ghost">ping me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section--alt" id="about">
+    <div class="wrap">
+      <p class="comment reveal">about.config</p>
+      <h2 class="heading-lg reveal d1">About<span class="accent">.</span>me</h2>
+
+      <div class="about__grid">
+        <div>
+          <p class="body-text about__desc reveal d2">
+            A Strategic People &amp; Culture Leader with over a decade of experience 
+            designing and executing frameworks that unify leadership, enhance 
+            organizational health, and translate strategy into meaningful employee 
+            experiences. Expert in learning strategy, digital transformation, and 
+            cultural innovation.
+          </p>
+
+          <div class="about__stats reveal d3">
+            <div class="stat">
+              <div class="stat__value" data-count="10">0</div>
+              <div class="stat__label">Years Experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value" data-count="10000">0</div>
+              <div class="stat__label">Employees Impacted</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value" data-count="100">0</div>
+              <div class="stat__label">Customer Journeys</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value" data-count="240">0</div>
+              <div class="stat__label">Self-Service Solutions</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__code-block reveal d4">
+          <div><span class="ln">1</span><span class="kw">const</span> <span class="prop">raymond</span> = {</div>
+          <div><span class="ln">2</span>  <span class="prop">location</span>: <span class="str">"Dubai, UAE"</span>,</div>
+          <div><span class="ln">3</span>  <span class="prop">company</span>:  <span class="str">"Emirates NBD"</span>,</div>
+          <div><span class="ln">4</span>  <span class="prop">role</span>:     <span class="str">"Knowledge Office Lead"</span>,</div>
+          <div><span class="ln">5</span>  <span class="prop">years</span>:    <span class="num">10</span>,</div>
+          <div><span class="ln">6</span>  <span class="prop">passion</span>:  <span class="str">"People &amp; Culture"</span>,</div>
+          <div><span class="ln">7</span>  <span class="cm">// Turning complexity into clarity</span></div>
+          <div><span class="ln">8</span>};</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <p class="comment reveal">work.history</p>
+      <h2 class="heading-lg reveal d1">Experience<span class="accent">[]</span></h2>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-item__header">
+            <span class="tl-item__date">2024 — Present</span>
+            <span class="tl-item__title">Knowledge Office Lead, People &amp; Culture</span>
+          </div>
+          <div class="tl-item__org">Emirates NBD · Dubai</div>
+          <p class="tl-item__desc">Enabling large-scale change and system adoption across 10,000+ employees through data-driven learning and capability enablement.</p>
+          <div class="tl-item__points">
+            <div class="tl-point">Change management strategies for 10,000+ staff — improved NPS and CSAT scores</div>
+            <div class="tl-point">Deployed Gen AI tools increasing front-line productivity</div>
+            <div class="tl-point">Reduced average search time from 3 minutes to 30 seconds</div>
+            <div class="tl-point">KPI-driven dashboards ensuring program effectiveness and ROI</div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-item__header">
+            <span class="tl-item__date">2023 — 2024</span>
+            <span class="tl-item__title">Content &amp; Knowledge Experience Lead</span>
+          </div>
+          <div class="tl-item__org">Emirates NBD · Group Customer Experience</div>
+          <p class="tl-item__desc">Drove enterprise content and knowledge enablement to accelerate digital adoption and strengthen CX outcomes.</p>
+          <div class="tl-item__points">
+            <div class="tl-point">Led 20+ enterprise knowledge and digital enablement initiatives</div>
+            <div class="tl-point">Increased content utilization by 75% across business units</div>
+            <div class="tl-point">Launched 50+ engagement activities; trained 2,500+ frontline staff</div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-item__header">
+            <span class="tl-item__date">2019 — 2023</span>
+            <span class="tl-item__title">CX Digital Transformation Lead</span>
+          </div>
+          <div class="tl-item__org">Emirates NBD &amp; Emirates Islamic</div>
+          <p class="tl-item__desc">Led group-wide omni-channel transformation, simplifying customer interactions and accelerating digital adoption.</p>
+          <div class="tl-item__points">
+            <div class="tl-point">Delivered Omni-Channel Optimization Program — website, chatbot, IVR</div>
+            <div class="tl-point">Complete website revamp driving self-service for 240+ services</div>
+            <div class="tl-point">Designed 100+ customer journeys enabling digital service requests</div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-item__header">
+            <span class="tl-item__date">2021 — 2022</span>
+            <span class="tl-item__title">Training Manager, L&amp;D</span>
+          </div>
+          <div class="tl-item__org">Emirates NBD · Concurrent role</div>
+          <p class="tl-item__desc">Enterprise system adoption through targeted learning programs and instructional design.</p>
+          <div class="tl-item__points">
+            <div class="tl-point">Designed training for system implementations and compliance</div>
+            <div class="tl-point">Created facilitator guides, e-learning modules, and assessments</div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-item__header">
+            <span class="tl-item__date">2015 — 2019</span>
+            <span class="tl-item__title">Senior Subject Matter Expert</span>
+          </div>
+          <div class="tl-item__org">Emirates NBD (Tanfeeth)</div>
+          <p class="tl-item__desc">Supported L&amp;D and business projects, mentored colleagues, authored knowledge-sharing materials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="wrap">
+      <p class="comment reveal">skills.json</p>
+      <h2 class="heading-lg reveal d1">Tech<span class="accent">.</span>stack</h2>
+
+      <div class="skills__grid">
+        <div class="skill-card reveal d1">
+          <div class="skill-card__header">
+            <div class="skill-card__icon">⚡</div>
+            <div class="skill-card__title">Knowledge &amp; Learning</div>
+          </div>
+          <div class="skill-card__tags">
+            <span class="tag">Knowledge Management</span>
+            <span class="tag">Digital Learning</span>
+            <span class="tag">Blended Learning</span>
+            <span class="tag">Instructional Design</span>
+            <span class="tag">Curriculum Dev</span>
+            <span class="tag">Needs Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal d2">
+          <div class="skill-card__header">
+            <div class="skill-card__icon">◈</div>
+            <div class="skill-card__title">Strategy &amp; Leadership</div>
+          </div>
+          <div class="skill-card__tags">
+            <span class="tag">L&D Strategy</span>
+            <span class="tag">Change Management</span>
+            <span class="tag">Agile</span>
+            <span class="tag">Waterfall</span>
+            <span class="tag">Stakeholder Engagement</span>
+            <span class="tag">KPI Reporting</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal d3">
+          <div class="skill-card__header">
+            <div class="skill-card__icon">&lt;/&gt;</div>
+            <div class="skill-card__title">Digital &amp; Technical</div>
+          </div>
+          <div class="skill-card__tags">
+            <span class="tag">SharePoint</span>
+            <span class="tag">ServiceNow</span>
+            <span class="tag">Sitecore CMS</span>
+            <span class="tag">Oracle Cloud</span>
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">ITIL</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal d4">
+          <div class="skill-card__header">
+            <div class="skill-card__icon">⟐</div>
+            <div class="skill-card__title">Customer Experience</div>
+          </div>
+          <div class="skill-card__tags">
+            <span class="tag">CX Design</span>
+            <span class="tag">Digital Transformation</span>
+            <span class="tag">Content Strategy</span>
+            <span class="tag">Service Excellence</span>
+            <span class="tag">Omni-Channel</span>
+            <span class="tag">Training Facilitation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="wrap">
+      <p class="comment reveal">education.log</p>
+      <h2 class="heading-lg reveal d1">Edu<span class="accent">()</span></h2>
+
+      <div class="edu-list">
+        <div class="edu-item reveal d1">
+          <span class="edu-item__status edu-item__status--active">IN PROGRESS</span>
+          <div class="edu-item__info">
+            <div class="edu-item__degree">MSc in Computer Science</div>
+            <div class="edu-item__school">IUBH University</div>
+          </div>
+        </div>
+
+        <div class="edu-item reveal d2">
+          <span class="edu-item__status edu-item__status--done">COMPLETED</span>
+          <div class="edu-item__info">
+            <div class="edu-item__degree">BSc in Computer Science</div>
+            <div class="edu-item__school">Olabisi Onabanjo University</div>
+          </div>
+        </div>
+
+        <div class="edu-item reveal d3">
+          <span class="edu-item__status edu-item__status--done">COMPLETED</span>
+          <div class="edu-item__info">
+            <div class="edu-item__degree">CS50: Intro to Computer Science</div>
+            <div class="edu-item__school">Harvard (EDX)</div>
+          </div>
+        </div>
+
+        <div class="edu-item reveal d4">
+          <span class="edu-item__status edu-item__status--done">COMPLETED</span>
+          <div class="edu-item__info">
+            <div class="edu-item__degree">Associate's in Computer Science</div>
+            <div class="edu-item__school">Lagos City Computer College</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section section--alt" id="portfolio">
+    <div class="wrap">
+      <p class="comment reveal">projects.init</p>
+      <h2 class="heading-lg reveal d1">Projects<span class="accent">{}</span></h2>
+
+      <div class="portfolio__grid">
+        <div class="project-card reveal d1">
+          <div class="project-card__idx">// 01</div>
+          <h3 class="project-card__title">Omni-Channel Optimization Program</h3>
+          <p class="project-card__desc">Website transformation, chatbot enablement, and EVA-IVR enhancement for consistent end-to-end customer experiences.</p>
+          <div class="project-card__tags">
+            <span class="tag">Digital Strategy</span>
+            <span class="tag">CX Design</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal d2">
+          <div class="project-card__idx">// 02</div>
+          <h3 class="project-card__title">Enterprise Knowledge Platform</h3>
+          <p class="project-card__desc">Redesigned knowledge architecture reducing search time from 3 minutes to 30 seconds across 10,000+ employees.</p>
+          <div class="project-card__tags">
+            <span class="tag">Knowledge Mgmt</span>
+            <span class="tag">Info Architecture</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal d3">
+          <div class="project-card__idx">// 03</div>
+          <h3 class="project-card__title">Gen AI Productivity Suite</h3>
+          <p class="project-card__desc">Implemented Gen AI tools across front-line staff driving measurable improvements in productivity and customer interactions.</p>
+          <div class="project-card__tags">
+            <span class="tag">Gen AI</span>
+            <span class="tag">Automation</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal d4">
+          <div class="project-card__idx">// 04</div>
+          <h3 class="project-card__title">Website Revamp &amp; Self-Service</h3>
+          <p class="project-card__desc">Led public website revamp for Emirates NBD and Emirates Islamic, driving self-service adoption for 240+ services.</p>
+          <div class="project-card__tags">
+            <span class="tag">UX/UI</span>
+            <span class="tag">Self-Service</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials">
+    <div class="wrap">
+      <p class="comment reveal">feedback.log</p>
+      <h2 class="heading-lg reveal d1">Console<span class="accent">.log</span>(feedback)</h2>
+
+      <div class="testimonials__grid">
+        <div class="quote-block reveal d1">
+          <div class="quote-block__prompt">$ cat review_01.txt</div>
+          <p class="quote-block__text">"Raymond brings a unique blend of strategic vision and hands-on execution. His ability to translate complex transformation goals into actionable programs is truly remarkable."</p>
+          <div class="quote-block__author">— Colleague</div>
+          <div class="quote-block__role">Emirates NBD</div>
+        </div>
+
+        <div class="quote-block reveal d2">
+          <div class="quote-block__prompt">$ cat review_02.txt</div>
+          <p class="quote-block__text">"His knowledge management initiatives fundamentally changed how our teams access and share information. The impact on productivity has been outstanding."</p>
+          <div class="quote-block__author">— Colleague</div>
+          <div class="quote-block__role">Emirates NBD</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="wrap">
+      <p class="comment reveal">connect.sh</p>
+      <h2 class="heading-lg reveal d1">$ <span class="accent">ssh</span> connect</h2>
+
+      <div class="contact__inner">
+        <p class="body-text reveal d2">
+          Open to exploring new opportunities, collaborations, and meaningful 
+          conversations around people strategy and digital transformation.
+        </p>
+
+        <div class="contact__links reveal d3">
+          <a href="mailto:raymondariwoola@gmail.com" class="contact__link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span class="contact__link-label">Email</span>
+            <span class="contact__link-value">raymondariwoola@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/raym0ndy" target="_blank" rel="noopener noreferrer" class="contact__link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            <span class="contact__link-label">LinkedIn</span>
+            <span class="contact__link-value">linkedin.com/in/raym0ndy</span>
+          </a>
+          <a href="tel:+971521515432" class="contact__link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span class="contact__link-label">Phone</span>
+            <span class="contact__link-value">+971 52 151 5432</span>
+          </a>
+        </div>
+
+        <a href="mailto:raymondariwoola@gmail.com" class="btn btn--primary reveal d4">./send_message</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__inner">
+        <span>&copy; 2025 Raymond Ariwoola</span>
+        <div class="footer__status">
+          <span class="footer__indicator">Available for opportunities</span>
+          <span>v1.0.0</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="btt" id="btt" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

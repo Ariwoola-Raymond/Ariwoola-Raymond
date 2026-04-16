@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I AM RAYMOND</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raymond Ariwoola — Choose Your Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #09090b;
+      color: #fafafa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+    }
+    .chooser-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .chooser-header h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      background: linear-gradient(135deg, #f43f5e, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 12px;
+    }
+    .chooser-header p {
+      color: #a1a1aa;
+      font-size: 1.05rem;
+    }
+    .chooser-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      width: 100%;
+    }
+    .chooser-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 28px;
+      background: #18181b;
+      border: 1px solid rgba(161,161,170,0.1);
+      border-radius: 20px;
+      text-decoration: none;
+      color: #fafafa;
+      transition: all 0.3s ease;
+    }
+    .chooser-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+      border-color: rgba(161,161,170,0.2);
+    }
+    .chooser-card__icon {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .chooser-card__title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .chooser-card__desc {
+      font-size: 0.88rem;
+      color: #71717a;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .chooser-card--active .chooser-card__title { color: #f43f5e; }
+    .chooser-card--disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+    .chooser-card--disabled .chooser-card__title::after {
+      content: ' (Coming Soon)';
+      font-size: 0.75rem;
+      color: #71717a;
+      font-weight: 400;
+    }
+    .chooser-footer {
+      margin-top: 56px;
+      color: #52525b;
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 <body>
-    .
+  <div class="chooser-header">
+    <h1>Raymond Ariwoola</h1>
+    <p>Choose a design style to preview</p>
+  </div>
+
+  <div class="chooser-grid">
+    <a href="creative-dynamic/" class="chooser-card chooser-card--active">
+      <div class="chooser-card__icon">🎨</div>
+      <div class="chooser-card__title">Creative &amp; Dynamic</div>
+      <p class="chooser-card__desc">Bold, personality-forward design with expressive colors and engaging interactions.</p>
+    </a>
+    <a href="corporate-polished/" class="chooser-card chooser-card--active">
+      <div class="chooser-card__icon">🏢</div>
+      <div class="chooser-card__title" style="color: #c9a84c;">Corporate &amp; Polished</div>
+      <p class="chooser-card__desc">Clean executive presence with refined typography and professional aesthetics.</p>
+    </a>
+    <a href="minimal-elegant/" class="chooser-card chooser-card--active">
+      <div class="chooser-card__icon">✨</div>
+      <div class="chooser-card__title" style="color: #6366f1;">Minimal &amp; Elegant</div>
+      <p class="chooser-card__desc">Less is more — typography-focused with generous whitespace and subtle details.</p>
+    </a>
+    <a href="tech-forward/" class="chooser-card chooser-card--active">
+      <div class="chooser-card__icon">⚡</div>
+      <div class="chooser-card__title" style="color: #00ff41;">Tech-Forward</div>
+      <p class="chooser-card__desc">Developer aesthetic with a professional edge, code-inspired visual language.</p>
+    </a>
+  </div>
+
+  <p class="chooser-footer">&copy; 2025 Raymond Ariwoola</p>
 </body>
 </html>
