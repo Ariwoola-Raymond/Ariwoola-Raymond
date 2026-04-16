@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raymond Ariwoola — Liquid Portfolio</title>
+  <meta name="description" content="Strategic People & Culture Leader — immersive WebGL portfolio experience.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='50' fill='%23120020'/><text x='50' y='68' font-family='Arial' font-size='48' font-weight='bold' text-anchor='middle' fill='%23c060ff'>RA</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__count" id="loaderCount">0</div>
+      <div class="loader__bar"><div class="loader__fill" id="loaderFill"></div></div>
+    </div>
+  </div>
+
+  <!-- Grain Overlay -->
+  <svg class="grain" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <filter id="grain-filter"><feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="4" stitchTiles="stitch"/></filter>
+    <rect width="100%" height="100%" filter="url(#grain-filter)" opacity="0.04"/>
+  </svg>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- WebGL Canvas -->
+  <canvas id="webgl"></canvas>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">RA<span class="nav__logo-dot"></span></a>
+      <div class="nav__links" id="navLinks">
+        <a href="#about" data-nav>About</a>
+        <a href="#experience" data-nav>Experience</a>
+        <a href="#skills" data-nav>Skills</a>
+        <a href="#education" data-nav>Education</a>
+        <a href="#portfolio" data-nav>Projects</a>
+        <a href="#contact" data-nav>Contact</a>
+      </div>
+      <div class="nav__right">
+        <button class="theme-btn" id="themeBtn" aria-label="Theme"><span class="theme-btn__dot"></span></button>
+        <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="theme-picker" id="themePicker">
+      <button class="tswatch tswatch--navy" data-set-theme="navy" title="Ocean Depth"></button>
+      <button class="tswatch tswatch--dark" data-set-theme="dark" title="Cosmic Ink"></button>
+      <button class="tswatch tswatch--light" data-set-theme="light" title="Milk Canvas"></button>
+      <button class="tswatch tswatch--vibrant" data-set-theme="vibrant" title="Acid Flow"></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a><a href="#experience">Experience</a>
+    <a href="#skills">Skills</a><a href="#education">Education</a>
+    <a href="#portfolio">Projects</a><a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <p class="hero__label">Creative Portfolio</p>
+        <h1 class="hero__name">
+          <span class="char-wrap">Raymond</span><br>
+          <span class="char-wrap">Ariwoola</span>
+        </h1>
+        <p class="hero__role">People &amp; Culture Leader · Dubai, UAE</p>
+        <div class="hero__cta">
+          <a href="#about" class="btn btn--primary" data-magnetic>Explore</a>
+          <a href="#contact" class="btn btn--ghost" data-magnetic>Contact</a>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="sec-header"><span class="sec-label">About</span><h2 class="sec-title">Who I Am</h2></div>
+        <div class="about__body">
+          <p class="reveal-line">I'm a Strategic People &amp; Culture Leader with over a decade of experience driving enterprise-wide transformation across people enablement, knowledge management, learning &amp; development, and purpose-led engagement.</p>
+          <p class="reveal-line">Based in Dubai, I specialize in designing and executing frameworks that unify leadership, enhance organizational health, and translate strategy into meaningful employee experiences.</p>
+        </div>
+        <div class="stats">
+          <div class="stat-card"><div class="stat-card__num" data-count="10">0</div><div class="stat-card__label">Years Experience</div></div>
+          <div class="stat-card"><div class="stat-card__num" data-count="10000">0</div><div class="stat-card__label">Lives Impacted</div></div>
+          <div class="stat-card"><div class="stat-card__num" data-count="100">0</div><div class="stat-card__label">Journeys Mapped</div></div>
+          <div class="stat-card"><div class="stat-card__num" data-count="240">0</div><div class="stat-card__label">Solutions Built</div></div>
+        </div>
+        <div class="about__lang">
+          <span class="pill">English <small>(Full Professional)</small></span>
+          <span class="pill">Yoruba <small>(Professional Working)</small></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience (Horizontal Scroll) -->
+    <section class="experience" id="experience">
+      <div class="container experience__header">
+        <div class="sec-header"><span class="sec-label">Experience</span><h2 class="sec-title">Career Journey</h2></div>
+      </div>
+      <div class="experience__track" id="expTrack">
+        <article class="exp-card fluid-card">
+          <span class="exp-card__date">Sep 2024 — Present</span>
+          <span class="exp-card__badge">Active</span>
+          <h3>Knowledge Office Lead, People &amp; Culture</h3>
+          <p class="exp-card__org">Emirates NBD · Dubai, UAE</p>
+          <ul><li>Change management for 10,000+ staff</li><li>Deployed Gen AI for productivity</li><li>Search time 3 min → 30 sec</li><li>KPI dashboards ensuring ROI</li></ul>
+        </article>
+        <article class="exp-card fluid-card">
+          <span class="exp-card__date">Feb 2023 — Sep 2024</span>
+          <h3>Content &amp; Knowledge Experience Lead</h3>
+          <p class="exp-card__org">Emirates NBD · Dubai, UAE</p>
+          <ul><li>20+ enterprise knowledge initiatives</li><li>75% content utilization increase</li><li>50+ engagement activities</li><li>KM training for 2,500+ staff</li></ul>
+        </article>
+        <article class="exp-card fluid-card">
+          <span class="exp-card__date">Jan 2019 — Jan 2023</span>
+          <h3>CX Digital Transformation Lead</h3>
+          <p class="exp-card__org">Emirates NBD · Dubai, UAE</p>
+          <ul><li>Owned OCOP: website, chatbot, IVR</li><li>240+ service endpoints revamped</li><li>100+ digital customer journeys</li><li>Cross-functional bridge builder</li></ul>
+        </article>
+        <article class="exp-card fluid-card">
+          <span class="exp-card__date">Mar 2021 — Sep 2022</span>
+          <span class="exp-card__badge">Concurrent</span>
+          <h3>Training Manager, L&amp;D</h3>
+          <p class="exp-card__org">Emirates NBD</p>
+          <ul><li>System implementation training</li><li>Instructional design materials</li><li>L&amp;D aligned with business priorities</li></ul>
+        </article>
+        <article class="exp-card fluid-card">
+          <span class="exp-card__date">Jun 2015 — Jan 2019</span>
+          <h3>Senior Subject Matter Expert</h3>
+          <p class="exp-card__org">Emirates NBD (Tanfeeth)</p>
+          <ul><li>Mentored on technical tools</li><li>Authored knowledge archives</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="sec-header"><span class="sec-label">Skills</span><h2 class="sec-title">Skill Palette</h2></div>
+        <div class="skills__grid">
+          <div class="fluid-card skills__group">
+            <h3>Knowledge &amp; Learning</h3>
+            <div class="skills__tags">
+              <span class="pill pill--accent">Knowledge Management Strategy</span>
+              <span class="pill pill--accent">Knowledge Base Design &amp; Maintenance</span>
+              <span class="pill">Digital Learning Solutions</span>
+              <span class="pill">Blended Learning</span>
+              <span class="pill">Instructional Design</span>
+              <span class="pill">Curriculum Development</span>
+              <span class="pill">Learning Needs Analysis</span>
+            </div>
+          </div>
+          <div class="fluid-card skills__group">
+            <h3>Strategy &amp; Leadership</h3>
+            <div class="skills__tags">
+              <span class="pill">L&amp;D Strategy</span>
+              <span class="pill pill--accent">Change Management &amp; Process Improvement</span>
+              <span class="pill">Agile PM</span><span class="pill">Waterfall PM</span>
+              <span class="pill">Stakeholder Engagement</span><span class="pill">KPI Tracking</span>
+            </div>
+          </div>
+          <div class="fluid-card skills__group">
+            <h3>Digital &amp; Technical</h3>
+            <div class="skills__tags">
+              <span class="pill">SharePoint</span><span class="pill">ServiceNow</span>
+              <span class="pill">Sitecore CMS</span><span class="pill">Oracle Cloud</span>
+              <span class="pill">Python</span><span class="pill">JavaScript</span>
+              <span class="pill">Data Analysis</span><span class="pill">ITIL</span>
+            </div>
+          </div>
+          <div class="fluid-card skills__group">
+            <h3>Customer &amp; Experience</h3>
+            <div class="skills__tags">
+              <span class="pill">CX Design</span><span class="pill">Digital Transformation</span>
+              <span class="pill">Content Strategy</span><span class="pill">Training Facilitation</span>
+              <span class="pill">Service Excellence</span><span class="pill">Omni-Channel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <div class="sec-header"><span class="sec-label">Education</span><h2 class="sec-title">Foundations</h2></div>
+        <div class="edu__grid">
+          <div class="fluid-card edu__card"><div class="edu__icon">🎓</div><h3>MSc in Computer Science</h3><p>IUBH University</p><span class="edu__badge edu__badge--active">In Progress</span></div>
+          <div class="fluid-card edu__card"><div class="edu__icon">🎓</div><h3>BSc in Computer Science</h3><p>Olabisi Onabanjo University</p><span class="edu__badge">Completed</span></div>
+          <div class="fluid-card edu__card"><div class="edu__icon">📜</div><h3>CS50: Intro to CS</h3><p>Harvard (via EDX)</p><span class="edu__badge">Completed</span></div>
+          <div class="fluid-card edu__card"><div class="edu__icon">📜</div><h3>Associate's in CS</h3><p>Lagos City Computer College</p><span class="edu__badge">Completed</span></div>
+        </div>
+        <div class="edu__extras">
+          <div class="fluid-card edu__extra">
+            <h3>Certifications</h3>
+            <div class="edu__pills"><span class="pill">Python: Data Analysis</span><span class="pill">Analytics Using Python — Masterclass</span><span class="pill">Python Essential Training</span><span class="pill">Certified Associate</span><span class="pill">Certificate of Gratitude</span></div>
+          </div>
+          <div class="fluid-card edu__extra">
+            <h3>Awards</h3>
+            <div class="edu__pills"><span class="pill pill--accent">Aspire Awards — Emirates NBD</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="sec-header"><span class="sec-label">Projects</span><h2 class="sec-title">Featured Work</h2></div>
+        <div class="proj__list">
+          <div class="proj fluid-card" data-tilt>
+            <span class="proj__num">01</span>
+            <div class="proj__body"><h3>Omni-Channel Optimization</h3><p>Website, chatbot, IVR — end-to-end CX transformation.</p><div class="proj__tags"><span class="pill">Digital Strategy</span><span class="pill">CX</span></div></div>
+          </div>
+          <div class="proj fluid-card" data-tilt>
+            <span class="proj__num">02</span>
+            <div class="proj__body"><h3>Enterprise Knowledge Platform</h3><p>Search time from 3 min to 30 sec across 10,000+ employees.</p><div class="proj__tags"><span class="pill">KM</span><span class="pill">IA</span></div></div>
+          </div>
+          <div class="proj fluid-card" data-tilt>
+            <span class="proj__num">03</span>
+            <div class="proj__body"><h3>Gen AI Productivity Suite</h3><p>Front-line productivity tools enhancing customer interactions.</p><div class="proj__tags"><span class="pill">Gen AI</span><span class="pill">Automation</span></div></div>
+          </div>
+          <div class="proj fluid-card" data-tilt>
+            <span class="proj__num">04</span>
+            <div class="proj__body"><h3>Website Revamp &amp; Self-Service</h3><p>Self-service adoption for 240+ services.</p><div class="proj__tags"><span class="pill">UX</span><span class="pill">Self-Service</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="sec-header"><span class="sec-label">Contact</span><h2 class="sec-title">Let's Connect</h2></div>
+        <div class="contact__box fluid-card">
+          <p>Open to new opportunities, collaborations, and conversations about people strategy and transformation.</p>
+          <div class="contact__links">
+            <a href="mailto:raymondariwoola@gmail.com" class="pill contact__link">📧 raymondariwoola@gmail.com</a>
+            <a href="https://www.linkedin.com/in/raym0ndy" target="_blank" rel="noopener noreferrer" class="pill contact__link">🔗 linkedin.com/in/raym0ndy</a>
+            <a href="tel:+971521515432" class="pill contact__link">📱 +971 52 151 5432</a>
+          </div>
+          <a href="mailto:raymondariwoola@gmail.com" class="btn btn--primary" data-magnetic>Send a Message</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><p>&copy; 2025 Raymond Ariwoola. Crafted with fluidity in Dubai.</p></div></footer>
+  <button class="back-to-top" id="backToTop" aria-label="Top"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.1/dist/lenis.min.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
