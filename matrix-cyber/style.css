@@ -292,10 +292,11 @@ body {
 /* --- About --- */
 .about__grid { display: grid; grid-template-columns: 280px 1fr; gap: 3rem; align-items: center; }
 .about__avatar-inner {
-  aspect-ratio: 3/4; padding: 2rem;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;
-  color: var(--text-secondary);
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  padding: 0;
 }
+.about__avatar-inner img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
 .scanline-text { font-family: 'Share Tech Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; }
 .about__text p { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8; }
 .about__stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem; }

@@ -329,10 +329,10 @@ body {
 }
 .about__photo-inner {
   aspect-ratio: 3/4;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;
-  color: var(--text-secondary);
+  overflow: hidden;
+  padding: 0;
 }
-.about__photo-inner span { font-family: 'Orbitron', sans-serif; font-size: 0.7rem; letter-spacing: 0.15em; }
+.about__photo-inner img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
 .about__text p { font-size: 1rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem; }
 .about__stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
 .stat { text-align: center; padding: 1rem; }

@@ -381,11 +381,9 @@ body {
   position: relative; overflow: hidden;
 }
 .about__image-placeholder {
-  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
-  color: var(--text-secondary);
+  width: 100%; height: 100%;
 }
-.about__image-placeholder svg { width: 48px; height: 48px; }
-.about__image-placeholder span { font-size: 0.8rem; letter-spacing: 0.1em; }
+.about__image-placeholder img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
 .about__description {
   font-size: 1.05rem; color: var(--text-secondary);
   line-height: 1.9; margin-bottom: 2.5rem;
