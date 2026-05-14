@@ -135,8 +135,10 @@ a {
 }
 
 img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
+    image-rendering: auto;
+    margin-top: 35%;
 }
 
 ul, ol {
