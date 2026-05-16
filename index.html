@@ -94,15 +94,103 @@
       color: #52525b;
       font-size: 0.85rem;
     }
+
+    /* ── Portal Overlay ── */
+    #ra-portal {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: #09090b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      opacity: 0;
+      animation: raPortalIn 0.2s ease forwards;
+    }
+    #ra-portal.ra-exit {
+      animation: raPortalOut 0.35s ease forwards;
+    }
+    .rap-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: 700;
+      background: linear-gradient(135deg, #f43f5e, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: rapNameIn 0.4s cubic-bezier(0.22,1,0.36,1) 0.15s forwards;
+    }
+    .rap-tagline {
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #52525b;
+      opacity: 0;
+      animation: rapNameIn 0.4s ease 0.3s forwards;
+    }
+    .rap-bar {
+      width: 180px;
+      height: 2px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .rap-bar__fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, #f43f5e, #f97316);
+      border-radius: 2px;
+      animation: rapBarFill 0.65s cubic-bezier(0.22,1,0.36,1) 0.35s forwards;
+    }
+    @keyframes raPortalIn  { to { opacity: 1; } }
+    @keyframes raPortalOut { to { opacity: 0; } }
+    @keyframes rapNameIn   { to { opacity: 1; transform: translateY(0); } }
+    @keyframes rapBarFill  { to { width: 100%; } }
+    .hidden { display: none !important; }
   </style>
+  <script>
+    (function () {
+      var pages = ['creative-dynamic/', 'corporate-polished/', 'minimal-elegant/', 'tech-forward/'];
+      var dest = pages[Math.floor(Math.random() * pages.length)];
+
+      // Hide the document before the first paint so the chooser never flashes
+      document.documentElement.style.opacity = '0';
+
+      document.addEventListener('DOMContentLoaded', function () {
+        // Build the branded portal overlay
+        var portal = document.createElement('div');
+        portal.id = 'ra-portal';
+        portal.innerHTML =
+          '<div class="rap-name">Raymond Ariwoola</div>' +
+          '<div class="rap-bar"><div class="rap-bar__fill"></div></div>' +
+          '<div class="rap-tagline">Loading your experience</div>';
+        document.body.insertBefore(portal, document.body.firstChild);
+
+        // Reveal the portal (covers the chooser completely)
+        document.documentElement.style.opacity = '1';
+
+        // After the bar finishes, fade out and redirect
+        setTimeout(function () {
+          portal.classList.add('ra-exit');
+          setTimeout(function () {
+            window.location.replace(dest);
+          }, 350);
+        }, 900);
+      });
+    }());
+  </script>
 </head>
 <body>
-  <div class="chooser-header">
+  <div class="chooser-header hidden">
     <h1>Raymond Ariwoola</h1>
     <p>Choose a design style to preview</p>
   </div>
 
-  <div class="chooser-grid">
+  <div class="chooser-grid hidden">
     <a href="creative-dynamic/" class="chooser-card chooser-card--active">
       <div class="chooser-card__icon">🎨</div>
       <div class="chooser-card__title">Creative &amp; Dynamic</div>
