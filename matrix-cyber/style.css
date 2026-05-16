@@ -295,6 +295,9 @@ body {
   aspect-ratio: 3/4;
   overflow: hidden;
   padding: 0;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: transparent;
 }
 .about__avatar-inner img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
 .scanline-text { font-family: 'Share Tech Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; }
