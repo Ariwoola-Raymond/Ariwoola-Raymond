@@ -6,6 +6,7 @@
 
 :root {
   --pl-accent: #7c6aef;
+  --pl-on-accent: #0b0b10;
   --pl-bg: rgba(12, 12, 16, 0.72);
   --pl-card-bg: rgba(255, 255, 255, 0.04);
   --pl-card-border: rgba(255, 255, 255, 0.08);
@@ -244,4 +245,148 @@
 
 @media (prefers-reduced-motion: reduce) {
   .pl-fab, .pl-modal, .pl-modal__panel, .pl-card { transition: none; }
+}
+
+/* ---------- View swap (grid ↔ confirm) ---------- */
+.pl-view {
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+.pl-view--confirm {
+  display: none;
+  opacity: 0;
+  transform: translateY(6px);
+}
+.pl-modal.is-confirming .pl-view--grid {
+  display: none;
+}
+.pl-modal.is-confirming .pl-view--confirm {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Confirmation panel ---------- */
+.pl-confirm {
+  text-align: center;
+  padding: 6px 4px 2px;
+}
+
+.pl-confirm__ring {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  margin: 6px auto 18px;
+}
+.pl-confirm__ring svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.pl-ring__track {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 6;
+}
+.pl-ring__bar {
+  fill: none;
+  stroke: var(--pl-accent);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 213.63; /* 2π·34 — overridden in JS */
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.95s linear;
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--pl-accent) 50%, transparent));
+}
+.pl-confirm__count {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font: 700 1.8rem/1 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  color: var(--pl-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.pl-confirm__title {
+  font: 700 1.15rem/1.3 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  margin: 0 0 8px;
+  color: #ffffff;
+}
+.pl-confirm__title span {
+  /* Keep project name in white for guaranteed legibility across themes;
+     accent is used only on the underline of the URL and the ring. */
+  color: #ffffff;
+}
+
+.pl-confirm__desc {
+  color: #d4d4d8;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 0 auto 22px;
+  max-width: 480px;
+  word-break: break-word;
+}
+.pl-confirm__desc strong { color: #ffffff; }
+.pl-confirm__url {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--pl-accent);
+}
+.pl-confirm__url:hover { opacity: 0.85; }
+
+.pl-confirm__actions {
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pl-btn {
+  font: 600 0.9rem/1 'Inter', system-ui, sans-serif;
+  padding: 11px 20px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease,
+    border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.pl-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--pl-accent) 30%, transparent);
+}
+.pl-btn--ghost {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+.pl-btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.pl-btn--primary {
+  background: var(--pl-accent);
+  color: var(--pl-on-accent);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--pl-accent) 35%, transparent);
+}
+.pl-btn--primary:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+
+.pl-confirm__hint {
+  margin: 18px 0 0;
+  font-size: 0.72rem;
+  color: var(--pl-text-dim);
+}
+.pl-confirm__hint kbd {
+  font: inherit;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pl-view, .pl-ring__bar, .pl-btn { transition: none; }
 }
