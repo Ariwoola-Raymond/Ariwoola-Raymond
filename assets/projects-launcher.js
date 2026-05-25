@@ -27,6 +27,12 @@
             desc: 'A beautifully gamified, voice-interactive clock-learning suite for young children, designed to make learning to tell time fun and engaging.',
             url: 'https://raymondariwoola.github.io/TheClockGame/',
             icon: '🕰️'
+        },
+            { 
+            title: 'Little Learners',
+            desc: 'A progressive web app for toddlers and early learners (ages 2–6). Hoot the owl guides children through interactive lessons in letters, numbers, colours, animals, shapes, and more.',
+            url: 'https://raymondariwoola.github.io/LittleLearners/',
+            icon: '🦉'
         }
         // Add more: { title, desc, url, icon }
     ];
