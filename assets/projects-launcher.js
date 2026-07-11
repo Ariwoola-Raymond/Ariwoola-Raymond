@@ -33,8 +33,13 @@
             desc: 'A progressive web app for toddlers and early learners (ages 2–6). Hoot the owl guides children through interactive lessons in letters, numbers, colours, animals, shapes, and more.',
             url: 'https://raymondariwoola.github.io/LittleLearners/',
             icon: '🦉'
+        },
+            { 
+            title: 'Game Theory',
+            desc: 'An interactive platform to explore fundamental concepts in game theory through engaging simulations and challenges.',
+            url: 'https://raymondariwoola.github.io/game-theory/',
+            icon: '🎮'
         }
-        // Add more: { title, desc, url, icon }
     ];
 
     /* ── Sync accent color into our namespaced var ── */
