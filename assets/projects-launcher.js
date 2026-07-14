@@ -39,6 +39,12 @@
             desc: 'An interactive platform to explore fundamental concepts in game theory through engaging simulations and challenges.',
             url: 'https://raymondariwoola.github.io/game-theory/',
             icon: '🎮'
+        },
+            { 
+            title: 'StackFall',
+            desc: 'A one-tap precision stacking game where you drop shifting-color floors as fast and clean as you can — miss the edge and the tower falls.',
+            url: 'https://raymondariwoola.github.io/StackFall/',
+            icon: '☰'
         }
     ];
 
