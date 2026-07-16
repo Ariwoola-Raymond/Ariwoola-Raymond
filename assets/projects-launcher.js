@@ -35,9 +35,9 @@
             icon: '🦉'
         },
             { 
-            title: 'Game Theory',
-            desc: 'An interactive platform to explore fundamental concepts in game theory through engaging simulations and challenges.',
-            url: 'https://raymondariwoola.github.io/game-theory/',
+            title: 'Psych Lab',
+            desc: 'Interactive experiments from game theory, behavioural economics and cognitive psychology and a profile built from how you actually play',
+            url: 'https://lab.raymondariwoola.com/',
             icon: '🎮'
         },
             { 
