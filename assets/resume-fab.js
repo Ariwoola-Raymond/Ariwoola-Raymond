@@ -6,6 +6,10 @@
 (() => {
   'use strict';
 
+  // Temporarily hide the resume download option across all portfolio themes.
+  const RESUME_DOWNLOAD_ENABLED = false;
+  if (!RESUME_DOWNLOAD_ENABLED) return;
+
   const RESUME_PATH = '/assets/Raymond-Ariwoola-Resume.pdf';
 
   /* ── Detect accent color from whichever CSS-variable convention the page uses ── */
