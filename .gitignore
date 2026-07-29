@@ -2,6 +2,7 @@
 *.log
 *.venv
 *.py
+*.env
 
 
 CLOUDFLARE_WEB_ANALYTICS_SETUP.md
