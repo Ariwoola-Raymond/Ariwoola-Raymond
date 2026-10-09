@@ -3,6 +3,6 @@
 *.venv
 *.py
 *.env
-
+*.github
 
 CLOUDFLARE_WEB_ANALYTICS_SETUP.md
