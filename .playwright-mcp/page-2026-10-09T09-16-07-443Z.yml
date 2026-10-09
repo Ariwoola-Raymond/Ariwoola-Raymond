@@ -1,0 +1,361 @@
+- generic [active] [ref=e1]:
+  - status [ref=e2]:
+    - generic [ref=e3]: Raymond Ariwoola
+    - generic [ref=e6]: Loading your experience
+  - iframe [ref=e7]:
+    - generic [ref=f1e1]:
+      - navigation [ref=f1e2]:
+        - generic [ref=f1e3]:
+          - link "RA." [ref=f1e4] [cursor=pointer]:
+            - /url: "#hero"
+          - list [ref=f1e5]:
+            - listitem [ref=f1e6]:
+              - link "About" [ref=f1e7] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=f1e8]:
+              - link "Experience" [ref=f1e9] [cursor=pointer]:
+                - /url: "#experience"
+            - listitem [ref=f1e10]:
+              - link "Skills" [ref=f1e11] [cursor=pointer]:
+                - /url: "#skills"
+            - listitem [ref=f1e12]:
+              - link "Education" [ref=f1e13] [cursor=pointer]:
+                - /url: "#education"
+            - listitem [ref=f1e14]:
+              - link "Portfolio" [ref=f1e15] [cursor=pointer]:
+                - /url: "#portfolio"
+            - listitem [ref=f1e16]:
+              - link "Contact" [ref=f1e17] [cursor=pointer]:
+                - /url: "#contact"
+          - button "Change color theme" [ref=f1e19] [cursor=pointer]
+        - generic:
+          - button "Navy Blue theme"
+          - button "Dark Mode theme"
+          - button "Light theme"
+          - button "Vibrant theme"
+      - generic:
+        - link "About":
+          - /url: "#about"
+        - link "Experience":
+          - /url: "#experience"
+        - link "Skills":
+          - /url: "#skills"
+        - link "Education":
+          - /url: "#education"
+        - link "Portfolio":
+          - /url: "#portfolio"
+        - link "Contact":
+          - /url: "#contact"
+      - generic [ref=f1e21]:
+        - generic [ref=f1e26]:
+          - paragraph [ref=f1e27]: Hello, I'm
+          - heading "Raymond Ariwoola" [level=1] [ref=f1e28]: RaymondAriwoola
+          - paragraph [ref=f1e29]:
+            - generic [ref=f1e30]: Peo
+            - generic [ref=f1e31]: "|"
+          - generic [ref=f1e32]:
+            - link "Discover My Story" [ref=f1e33] [cursor=pointer]:
+              - /url: "#about"
+            - link "Get In Touch" [ref=f1e34] [cursor=pointer]:
+              - /url: "#contact"
+        - link "Scroll down" [ref=f1e35] [cursor=pointer]:
+          - /url: "#about"
+          - generic [ref=f1e36]: Scroll
+      - generic [ref=f1e40]:
+        - img "Raymond Ariwoola" [ref=f1e44]
+        - generic [ref=f1e46]:
+          - paragraph [ref=f1e47]: About Me
+          - heading "Transforming Organizations Through People & Culture" [level=2] [ref=f1e48]: Transforming OrganizationsThrough People & Culture
+          - paragraph [ref=f1e49]: I'm a Strategic People & Culture Leader with over a decade of experience driving enterprise-wide transformation across people enablement, knowledge management, learning & development, and purpose-led engagement. Based in Dubai, I specialize in designing and executing frameworks that unify leadership, enhance organizational health, and translate strategy into meaningful employee experiences.
+          - generic [ref=f1e50]:
+            - generic [ref=f1e51]:
+              - generic [ref=f1e52]: "0"
+              - generic [ref=f1e53]: Years of Experience
+            - generic [ref=f1e54]:
+              - generic [ref=f1e55]: "0"
+              - generic [ref=f1e56]: Employees Impacted
+            - generic [ref=f1e57]:
+              - generic [ref=f1e58]: "0"
+              - generic [ref=f1e59]: Customer Journeys
+            - generic [ref=f1e60]:
+              - generic [ref=f1e61]: "0"
+              - generic [ref=f1e62]: Self-Service Solutions
+          - generic [ref=f1e63]:
+            - generic [ref=f1e64]: "Languages:"
+            - generic [ref=f1e65]: English (Full Professional)
+            - generic [ref=f1e66]: Yoruba (Professional Working)
+      - generic [ref=f1e68]:
+        - generic [ref=f1e69]:
+          - paragraph [ref=f1e70]: Career Journey
+          - heading "Professional Experience" [level=2] [ref=f1e71]
+          - paragraph [ref=f1e72]: A decade of driving transformation at one of the Middle East's leading financial institutions.
+        - generic [ref=f1e73]:
+          - generic [ref=f1e76]:
+            - generic [ref=f1e77]: Sep 2024 — Present
+            - heading "Knowledge Office Lead, People & Culture" [level=3] [ref=f1e78]
+            - paragraph [ref=f1e79]: Emirates NBD · Dubai, UAE
+            - paragraph [ref=f1e80]: Enabling large-scale change and system adoption across 10,000+ employees through data-driven learning, knowledge, and capability enablement.
+            - generic [ref=f1e81]:
+              - generic [ref=f1e82]: Implemented change management strategies for 10,000+ staff, leading to improvements in call handling and increases in NPS and CSAT scores
+              - generic [ref=f1e83]: Deployed Gen AI tools to increase productivity across front-line staff and enhance customer interactions
+              - generic [ref=f1e84]: Reduced average search time from 3 minutes to 30 seconds via improved knowledge architecture
+              - generic [ref=f1e85]: Designed KPI-driven dashboards and reports for leadership, ensuring program effectiveness and ROI
+          - generic [ref=f1e88]:
+            - generic [ref=f1e89]: Feb 2023 — Sep 2024
+            - heading "Content & Knowledge Experience Lead, Group CX" [level=3] [ref=f1e90]
+            - paragraph [ref=f1e91]: Emirates NBD · Dubai, UAE
+            - paragraph [ref=f1e92]: Drove enterprise content and knowledge enablement to accelerate digital adoption, improve self-service, and strengthen customer and employee experience outcomes.
+            - generic [ref=f1e93]:
+              - generic [ref=f1e94]: Led 20+ enterprise knowledge and digital enablement initiatives across Emirates NBD Group
+              - generic [ref=f1e95]: Increased content utilization by 75% across different business units through enhanced content strategies
+              - generic [ref=f1e96]: Launched 50+ engagement activities boosting article visibility and user engagement
+              - generic [ref=f1e97]: Delivered KM Platform training for over 2,500 frontline staff across multiple business units
+          - generic [ref=f1e100]:
+            - generic [ref=f1e101]: Jan 2019 — Jan 2023
+            - heading "Customer Experience Digital Transformation Lead" [level=3] [ref=f1e102]
+            - paragraph [ref=f1e103]: Emirates NBD · Dubai, UAE
+            - paragraph [ref=f1e104]: Led group-wide omni-channel transformation initiatives across Emirates NBD and Emirates Islamic, focused on simplifying customer interactions and accelerating digital adoption.
+            - generic [ref=f1e105]:
+              - generic [ref=f1e106]: Owned and delivered the Omni-Channel Optimization Program (OCOP) spanning website, chatbot, and IVR
+              - generic [ref=f1e107]: Led complete public website revamp driving self-service adoption for 240+ services
+              - generic [ref=f1e108]: Designed and implemented 100+ customer journeys enabling digital service requests
+              - generic [ref=f1e109]: Bridged Business, IT, CRM, Risk, and Legal to deliver scalable, customer-centric digital solutions
+          - generic [ref=f1e112]:
+            - generic [ref=f1e113]: Mar 2021 — Sep 2022
+            - heading "Training Manager, Learning & Development" [level=3] [ref=f1e114]
+            - paragraph [ref=f1e115]: Emirates NBD · Dubai, UAE (concurrent role)
+            - paragraph [ref=f1e116]: Enabled enterprise system adoption and workforce readiness through targeted learning programs, instructional design, and performance-driven training execution.
+            - generic [ref=f1e117]:
+              - generic [ref=f1e118]: Designed, delivered, and evaluated training programs for system implementations and compliance
+              - generic [ref=f1e119]: Created instructional design materials including facilitator guides, e-learning modules, and assessments
+              - generic [ref=f1e120]: Aligned L&D initiatives with business priorities to improve adoption of digital tools
+          - generic [ref=f1e123]:
+            - generic [ref=f1e124]: Jun 2015 — Jan 2019
+            - heading "Senior Subject Matter Expert" [level=3] [ref=f1e125]
+            - paragraph [ref=f1e126]: Emirates NBD (Tanfeeth) · Dubai, UAE
+            - paragraph [ref=f1e127]: Supported L&D and business projects by evaluating systems and recommending innovative solutions.
+            - generic [ref=f1e128]:
+              - generic [ref=f1e129]: Mentored colleagues on technical tools and process enhancements, improving team efficiency
+              - generic [ref=f1e130]: Authored user guides, training documentation, and knowledge-sharing materials
+      - generic [ref=f1e132]:
+        - generic [ref=f1e133]:
+          - paragraph [ref=f1e134]: Expertise
+          - heading "Skills & Capabilities" [level=2] [ref=f1e135]
+          - paragraph [ref=f1e136]: A versatile skill set spanning strategy, technology, and people development.
+        - generic [ref=f1e137]:
+          - generic [ref=f1e138]:
+            - generic [ref=f1e139]: 🧠
+            - heading "Knowledge & Learning" [level=3] [ref=f1e140]
+            - generic [ref=f1e141]:
+              - generic [ref=f1e142]: Knowledge Management Strategy
+              - generic [ref=f1e143]: Knowledge Base Design & Maintenance
+              - generic [ref=f1e144]: Digital Learning Solutions
+              - generic [ref=f1e145]: Blended Learning Programs
+              - generic [ref=f1e146]: Instructional Design
+              - generic [ref=f1e147]: Curriculum Development
+              - generic [ref=f1e148]: Learning Needs Analysis
+          - generic [ref=f1e149]:
+            - generic [ref=f1e150]: 🚀
+            - heading "Strategy & Leadership" [level=3] [ref=f1e151]
+            - generic [ref=f1e152]:
+              - generic [ref=f1e153]: L&D Strategy
+              - generic [ref=f1e154]: Change Management & Process Improvement
+              - generic [ref=f1e155]: Project Management (Agile)
+              - generic [ref=f1e156]: Project Management (Waterfall)
+              - generic [ref=f1e157]: Stakeholder Engagement
+              - generic [ref=f1e158]: KPI Tracking & Reporting
+          - generic [ref=f1e159]:
+            - generic [ref=f1e160]: 💡
+            - heading "Digital & Technical" [level=3] [ref=f1e161]
+            - generic [ref=f1e162]:
+              - generic [ref=f1e163]: SharePoint
+              - generic [ref=f1e164]: ServiceNow
+              - generic [ref=f1e165]: Sitecore CMS
+              - generic [ref=f1e166]: Oracle Cloud (OCI)
+              - generic [ref=f1e167]: Python
+              - generic [ref=f1e168]: JavaScript
+              - generic [ref=f1e169]: Data Analysis
+              - generic [ref=f1e170]: ITIL Practices
+          - generic [ref=f1e171]:
+            - generic [ref=f1e172]: 🎯
+            - heading "Customer & Experience" [level=3] [ref=f1e173]
+            - generic [ref=f1e174]:
+              - generic [ref=f1e175]: Customer Experience Design
+              - generic [ref=f1e176]: Digital Transformation
+              - generic [ref=f1e177]: Content Strategy
+              - generic [ref=f1e178]: Training Facilitation
+              - generic [ref=f1e179]: Service Excellence
+              - generic [ref=f1e180]: Omni-Channel Strategy
+      - region [ref=f1e181]:
+        - generic [ref=f1e182]:
+          - generic [ref=f1e183]:
+            - paragraph [ref=f1e184]: People Experience & Engagement
+            - heading "Turning people strategy into experiences that stick." [level=2] [ref=f1e185]
+            - paragraph [ref=f1e186]: I design and govern the platforms, journeys, and moments that help 10,000+ employees connect, learn, contribute, and thrive - combining human-centered design, applied behavioral psychology, and rigorous program governance.
+          - list "People experience capabilities and outcomes" [ref=f1e187]:
+            - listitem [ref=f1e188]:
+              - generic [ref=f1e189]: "01"
+              - heading "Employee voice to action" [level=3] [ref=f1e190]
+              - paragraph [ref=f1e191]: I conceived and led Think Space, a group-wide idea platform that enables employees to submit, track, and champion ideas, with structured review and direct ownership that closes the loop between employee voice and organizational action.
+            - listitem [ref=f1e192]:
+              - generic [ref=f1e193]: "02"
+              - heading "Insight-led people decisions" [level=3] [ref=f1e194]
+              - paragraph [ref=f1e195]: I designed and now govern the People & Culture Dashboard, bringing engagement, culture-health, and knowledge-performance measures into a central leadership view for data-informed decisions and executive reporting.
+            - listitem [ref=f1e196]:
+              - generic [ref=f1e197]: "03"
+              - heading "Culture, values, and recognition" [level=3] [ref=f1e198]
+              - paragraph [ref=f1e199]: I led a culture transformation within the Group Knowledge Office, redesigning team rituals, feedback loops, and recognition practices to strengthen engagement and knowledge-sharing behaviors and inform wider interventions.
+            - listitem [ref=f1e200]:
+              - generic [ref=f1e201]: "04"
+              - heading "Journey and behavior design" [level=3] [ref=f1e202]
+              - paragraph [ref=f1e203]: I apply journey mapping, moments-that-matter design, motivation theory, choice architecture, and habit-formation principles to improve adoption - building on experience delivering more than 100 end-to-end journeys.
+          - generic [ref=f1e204]:
+            - generic [ref=f1e205]:
+              - heading "Psychology-informed practice" [level=3] [ref=f1e206]
+              - paragraph [ref=f1e207]: "Behavioral and organizational psychology shape how I approach employee experience and sustained change: decision biases in adoption, autonomy and mastery in engagement, and habit-loop design in system rollouts."
+              - paragraph [ref=f1e208]:
+                - strong [ref=f1e209]: "Read and applied:"
+                - emphasis [ref=f1e210]: Thinking, Fast and Slow
+                - text: ","
+                - emphasis [ref=f1e211]: Drive
+                - text: ", and"
+                - emphasis [ref=f1e212]: The Power of Habit
+                - text: .
+              - paragraph [ref=f1e213]:
+                - strong [ref=f1e214]: "Currently building on:"
+                - emphasis [ref=f1e215]: Nudge
+                - text: ","
+                - emphasis [ref=f1e216]: Your Brain at Work
+                - text: ", and"
+                - emphasis [ref=f1e217]: The Culture Code
+                - text: .
+            - complementary "Professional development" [ref=f1e218]:
+              - heading "Professional development" [level=3] [ref=f1e219]
+              - generic [ref=f1e220]:
+                - generic [ref=f1e221]:
+                  - text: PROSCI Change Management Practitioner Certification
+                  - generic [ref=f1e222]: In progress · 2026
+                - generic [ref=f1e223]:
+                  - text: CIPD Level 5 Diploma in People Management
+                  - generic [ref=f1e224]: In progress · 2026
+      - generic [ref=f1e226]:
+        - generic [ref=f1e227]:
+          - paragraph [ref=f1e228]: Education
+          - heading "Academic Background" [level=2] [ref=f1e229]
+          - paragraph [ref=f1e230]: A strong foundation in computer science and continuous learning.
+        - generic [ref=f1e231]:
+          - generic [ref=f1e232]:
+            - generic [ref=f1e234]: 🎓
+            - heading "MSc in Computer Science" [level=3] [ref=f1e235]
+            - paragraph [ref=f1e236]: IUBH University of Applied Sciences
+            - text: In Progress
+          - generic [ref=f1e237]:
+            - generic [ref=f1e239]: 🎓
+            - heading "BSc in Computer Science" [level=3] [ref=f1e240]
+            - paragraph [ref=f1e241]: Olabisi Onabanjo University
+            - text: Completed
+          - generic [ref=f1e242]:
+            - generic [ref=f1e244]: 📜
+            - 'heading "CS50: Intro to Computer Science" [level=3] [ref=f1e245]'
+            - paragraph [ref=f1e246]: Harvard University (via EDX)
+            - text: Completed
+          - generic [ref=f1e247]:
+            - generic [ref=f1e249]: 📜
+            - heading "Associate's in Computer Science" [level=3] [ref=f1e250]
+            - paragraph [ref=f1e251]: Lagos City Computer College
+            - text: Completed
+        - generic [ref=f1e252]:
+          - generic [ref=f1e253]:
+            - heading "🏅 Certifications" [level=3] [ref=f1e254]
+            - generic [ref=f1e255]:
+              - generic [ref=f1e256]: "Python: Data Analysis"
+              - generic [ref=f1e257]: Analytics Using Python — Masterclass
+              - generic [ref=f1e258]: Python Essential Training
+              - generic [ref=f1e259]: Certified Associate
+              - generic [ref=f1e260]: Certificate of Gratitude
+          - generic [ref=f1e261]:
+            - heading "🏆 Honors & Awards" [level=3] [ref=f1e262]
+            - generic [ref=f1e263]: Aspire Awards — Emirates NBD
+      - generic [ref=f1e266]:
+        - generic [ref=f1e267]:
+          - paragraph [ref=f1e268]: Portfolio
+          - heading "Key Projects & Initiatives" [level=2] [ref=f1e269]
+          - paragraph [ref=f1e270]: Enterprise-scale programs that delivered measurable business impact.
+        - generic [ref=f1e271]:
+          - generic [ref=f1e272]:
+            - generic [ref=f1e273]: 🌐
+            - generic [ref=f1e274]:
+              - heading "Omni-Channel Optimization Program" [level=3] [ref=f1e275]
+              - paragraph [ref=f1e276]: Owned and delivered OCOP spanning website transformation, chatbot enablement, and EVA-IVR enhancement, creating consistent end-to-end customer experiences across digital and assisted channels.
+              - generic [ref=f1e277]:
+                - generic [ref=f1e278]: Digital Strategy
+                - generic [ref=f1e279]: CX Design
+                - generic [ref=f1e280]: Omni-Channel
+          - generic [ref=f1e281]:
+            - generic [ref=f1e282]: 📚
+            - generic [ref=f1e283]:
+              - heading "Enterprise Knowledge Platform" [level=3] [ref=f1e284]
+              - paragraph [ref=f1e285]: Redesigned knowledge architecture that reduced average search time from 3 minutes to 30 seconds, enabling faster decision-making across 10,000+ employees.
+              - generic [ref=f1e286]:
+                - generic [ref=f1e287]: Knowledge Management
+                - generic [ref=f1e288]: Information Architecture
+          - generic [ref=f1e289]:
+            - generic [ref=f1e290]: 🤖
+            - generic [ref=f1e291]:
+              - heading "Gen AI Productivity Suite" [level=3] [ref=f1e292]
+              - paragraph [ref=f1e293]: Implemented Gen AI tools across front-line staff to increase productivity and enhance customer interactions, driving measurable improvements across multiple channels.
+              - generic [ref=f1e294]:
+                - generic [ref=f1e295]: Gen AI
+                - generic [ref=f1e296]: Automation
+                - generic [ref=f1e297]: Productivity
+          - generic [ref=f1e298]:
+            - generic [ref=f1e299]: 🎯
+            - generic [ref=f1e300]:
+              - heading "Website Revamp & Self-Service" [level=3] [ref=f1e301]
+              - paragraph [ref=f1e302]: Led the complete public website revamp for Emirates NBD and Emirates Islamic, driving self-service adoption for 240+ services through improved UX and structured customer journeys.
+              - generic [ref=f1e303]:
+                - generic [ref=f1e304]: UX/UI
+                - generic [ref=f1e305]: Self-Service
+                - generic [ref=f1e306]: Digital Adoption
+      - generic [ref=f1e308]:
+        - generic [ref=f1e309]:
+          - paragraph [ref=f1e310]: Testimonials
+          - heading "What People Say" [level=2] [ref=f1e311]
+          - paragraph [ref=f1e312]: Perspectives from colleagues and collaborators.
+        - generic [ref=f1e313]:
+          - generic [ref=f1e314]:
+            - generic [ref=f1e315]: "\""
+            - paragraph [ref=f1e316]: Raymond brings a unique blend of strategic vision and hands-on execution. His ability to translate complex transformation goals into actionable programs is truly remarkable.
+            - generic [ref=f1e317]:
+              - generic [ref=f1e318]: JD
+              - generic [ref=f1e319]:
+                - generic [ref=f1e320]: — Colleague
+                - generic [ref=f1e321]: Emirates NBD
+          - generic [ref=f1e322]:
+            - generic [ref=f1e323]: "\""
+            - paragraph [ref=f1e324]: His knowledge management initiatives fundamentally changed how our teams access and share information. The impact on productivity and decision-making has been outstanding.
+            - generic [ref=f1e325]:
+              - generic [ref=f1e326]: SM
+              - generic [ref=f1e327]:
+                - generic [ref=f1e328]: — Colleague
+                - generic [ref=f1e329]: Emirates NBD
+      - generic [ref=f1e331]:
+        - generic [ref=f1e332]:
+          - paragraph [ref=f1e333]: Get In Touch
+          - heading "Let's Connect" [level=2] [ref=f1e334]
+        - generic [ref=f1e335]:
+          - paragraph [ref=f1e336]: I'm always open to exploring new opportunities, collaborations, and meaningful conversations around people strategy, digital transformation, and organizational growth. Feel free to reach out.
+          - generic [ref=f1e337]:
+            - link [ref=f1e338] [cursor=pointer]:
+              - /url: mailto:raymondariwoola@gmail.com
+            - link [ref=f1e343] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/raym0ndy
+            - link [ref=f1e349] [cursor=pointer]:
+              - /url: tel:+971521515432
+          - link "Send Me a Message" [ref=f1e354] [cursor=pointer]:
+            - /url: mailto:raymondariwoola@gmail.com
+      - contentinfo [ref=f1e355]:
+        - paragraph [ref=f1e357]: © 2026 Raymond Ariwoola. Built with ♥ in Dubai.
+      - button "Back to top"
+      - button "Open projects launcher (Shift + P)" [ref=f1e358] [cursor=pointer]:
+        - generic: Projects Shift+P

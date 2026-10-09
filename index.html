@@ -3,248 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raymond Ariwoola — Choose Your Experience</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <title>Raymond Ariwoola — People &amp; Culture Leader</title>
+  <meta name="description" content="Strategic People &amp; Culture Leader with 10+ years of experience driving enterprise-wide transformation across people enablement, knowledge management, and digital innovation.">
+
+  <meta property="og:title" content="Raymond Ariwoola — People &amp; Culture Leader">
+  <meta property="og:description" content="Strategic People &amp; Culture Leader driving enterprise-wide transformation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://raymondariwoola.com">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='4' fill='%23c9a84c'/><text x='50' y='68' font-family='Georgia' font-size='42' font-weight='bold' text-anchor='middle' fill='%230b1628'>RA</text></svg>">
+
   <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root,
     body {
-      font-family: 'Inter', sans-serif;
-      background: #09090b;
-      color: #fafafa;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 48px 24px;
-    }
-    .chooser-header {
-      text-align: center;
-      margin-bottom: 56px;
-    }
-    .chooser-header h1 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      font-weight: 700;
-      background: linear-gradient(135deg, #f43f5e, #f97316);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 12px;
-    }
-    .chooser-header p {
-      color: #a1a1aa;
-      font-size: 1.05rem;
-    }
-    .chooser-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 24px;
-      max-width: 1100px;
+      margin: 0;
       width: 100%;
-    }
-    .chooser-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 28px;
-      background: #18181b;
-      border: 1px solid rgba(161,161,170,0.1);
-      border-radius: 20px;
-      text-decoration: none;
-      color: #fafafa;
-      transition: all 0.3s ease;
-    }
-    .chooser-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.4);
-      border-color: rgba(161,161,170,0.2);
-    }
-    .chooser-card__icon {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    .chooser-card__title {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .chooser-card__desc {
-      font-size: 0.88rem;
-      color: #71717a;
-      text-align: center;
-      line-height: 1.6;
-    }
-    .chooser-card--active .chooser-card__title { color: #f43f5e; }
-    .chooser-card--disabled {
-      opacity: 0.4;
-      pointer-events: none;
-    }
-    .chooser-card--disabled .chooser-card__title::after {
-      content: ' (Coming Soon)';
-      font-size: 0.75rem;
-      color: #71717a;
-      font-weight: 400;
-    }
-    .chooser-footer {
-      margin-top: 56px;
-      color: #52525b;
-      font-size: 0.85rem;
+      min-height: 100%;
+      background: #09090b;
     }
 
-    /* ── Portal Overlay ── */
+    body {
+      overflow: hidden;
+    }
+
+    #experience-frame {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      border: 0;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    #experience-frame.is-ready {
+      opacity: 1;
+    }
+
     #ra-portal {
       position: fixed;
       inset: 0;
       z-index: 99999;
-      background: #09090b;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 32px;
+      background: #09090b;
+      transition: opacity 0.35s ease;
+    }
+
+    #ra-portal.is-hidden {
       opacity: 0;
-      animation: raPortalIn 0.2s ease forwards;
+      pointer-events: none;
     }
-    #ra-portal.ra-exit {
-      animation: raPortalOut 0.35s ease forwards;
-    }
+
     .rap-name {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(1.8rem, 5vw, 3rem);
-      font-weight: 700;
-      background: linear-gradient(135deg, #f43f5e, #f97316);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      opacity: 0;
-      transform: translateY(10px);
-      animation: rapNameIn 0.4s cubic-bezier(0.22,1,0.36,1) 0.15s forwards;
+      color: #f43f5e;
+      font: 700 clamp(1.8rem, 5vw, 3rem)/1.2 'Arial', sans-serif;
     }
+
     .rap-tagline {
-      font-size: 0.85rem;
+      color: #52525b;
+      font: 0.85rem/1.2 'Arial', sans-serif;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: #52525b;
-      opacity: 0;
-      animation: rapNameIn 0.4s ease 0.3s forwards;
     }
+
     .rap-bar {
       width: 180px;
       height: 2px;
-      background: rgba(255,255,255,0.07);
-      border-radius: 2px;
       overflow: hidden;
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 2px;
     }
+
     .rap-bar__fill {
+      width: 100%;
       height: 100%;
-      width: 0;
       background: linear-gradient(90deg, #f43f5e, #f97316);
       border-radius: 2px;
-      animation: rapBarFill 0.65s cubic-bezier(0.22,1,0.36,1) 0.35s forwards;
+      transform-origin: left;
+      animation: rapBarFill 0.9s ease forwards;
     }
-    @keyframes raPortalIn  { to { opacity: 1; } }
-    @keyframes raPortalOut { to { opacity: 0; } }
-    @keyframes rapNameIn   { to { opacity: 1; transform: translateY(0); } }
-    @keyframes rapBarFill  { to { width: 100%; } }
-    .hidden { display: none !important; }
+
+    @keyframes rapBarFill {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
   </style>
+
   <script>
     (function () {
       var pages = ['creative-dynamic/', 'corporate-polished/', 'minimal-elegant/'];
       var dest = pages[Math.floor(Math.random() * pages.length)];
 
-      // Hide the document before the first paint so the chooser never flashes
-      document.documentElement.style.opacity = '0';
-
       document.addEventListener('DOMContentLoaded', function () {
-        // Build the branded portal overlay
-        var portal = document.createElement('div');
-        portal.id = 'ra-portal';
-        portal.innerHTML =
-          '<div class="rap-name">Raymond Ariwoola</div>' +
-          '<div class="rap-bar"><div class="rap-bar__fill"></div></div>' +
-          '<div class="rap-tagline">Loading your experience</div>';
-        document.body.insertBefore(portal, document.body.firstChild);
+        var frame = document.getElementById('experience-frame');
+        var portal = document.getElementById('ra-portal');
 
-        // Reveal the portal (covers the chooser completely)
-        document.documentElement.style.opacity = '1';
+        frame.addEventListener('load', function () {
+          frame.classList.add('is-ready');
+          window.setTimeout(function () {
+            portal.classList.add('is-hidden');
+          }, 150);
+        });
 
-        // After the bar finishes, fade out and redirect
-        setTimeout(function () {
-          portal.classList.add('ra-exit');
-          setTimeout(function () {
-            window.location.replace(dest);
-          }, 350);
-        }, 900);
+        frame.src = dest;
       });
     }());
   </script>
 </head>
 <body>
-  <div class="chooser-header hidden">
-    <h1>Raymond Ariwoola</h1>
-    <p>Choose a design style to preview</p>
+  <div id="ra-portal" role="status" aria-live="polite">
+    <div class="rap-name">Raymond Ariwoola</div>
+    <div class="rap-bar"><div class="rap-bar__fill"></div></div>
+    <div class="rap-tagline">Loading your experience</div>
   </div>
 
-  <div class="chooser-grid hidden">
-    <a href="creative-dynamic/" class="chooser-card chooser-card--active">
-      <div class="chooser-card__icon">🎨</div>
-      <div class="chooser-card__title">Creative &amp; Dynamic</div>
-      <p class="chooser-card__desc">Bold, personality-forward design with expressive colors and engaging interactions.</p>
-    </a>
-    <a href="corporate-polished/" class="chooser-card chooser-card--active">
-      <div class="chooser-card__icon">🏢</div>
-      <div class="chooser-card__title" style="color: #c9a84c;">Corporate &amp; Polished</div>
-      <p class="chooser-card__desc">Clean executive presence with refined typography and professional aesthetics.</p>
-    </a>
-    <a href="minimal-elegant/" class="chooser-card chooser-card--active">
-      <div class="chooser-card__icon">✨</div>
-      <div class="chooser-card__title" style="color: #6366f1;">Minimal &amp; Elegant</div>
-      <p class="chooser-card__desc">Less is more — typography-focused with generous whitespace and subtle details.</p>
-    </a>
-    <a href="tech-forward/" class="chooser-card chooser-card--active">
-      <div class="chooser-card__icon">⚡</div>
-      <div class="chooser-card__title" style="color: #00ff41;">Tech-Forward</div>
-      <p class="chooser-card__desc">Developer aesthetic with a professional edge, code-inspired visual language.</p>
-    </a>
-    <a href="cinematic-dark/" class="chooser-card chooser-card--active">
-      <div class="chooser-card__icon">🎬</div>
-      <div class="chooser-card__title" style="color: #d4a853;">Cinematic Dark</div>
-      <p class="chooser-card__desc">Film-inspired drama with parallax, 3D card flips, spotlight cursor, and grain texture.</p>
-    </a>
-    <a href="glassmorphism/" class="chooser-card chooser-card--active">
-      <div class="chooser-card__icon">🪟</div>
-      <div class="chooser-card__title" style="color: #a07cff;">Glassmorphism</div>
-      <p class="chooser-card__desc">Frosted glass cards over animated gradient orbs with depth-of-field blur effects.</p>
-    </a>
-    <a href="retro-futurism/" class="chooser-card chooser-card--active">
-      <div class="chooser-card__icon">🌆</div>
-      <div class="chooser-card__title" style="color: #ff00ff;">Retro Futurism</div>
-      <p class="chooser-card__desc">Synthwave neon with scanlines, perspective grid, glitch text, and cut-corner cards.</p>
-    </a>
-    <a href="nature-organic/" class="chooser-card chooser-card--active">
-      <div class="chooser-card__icon">🌿</div>
-      <div class="chooser-card__title" style="color: #5cb85c;">Nature &amp; Organic</div>
-      <p class="chooser-card__desc">Earthy tones, falling leaf particles, SVG wave dividers, and tree-trunk timeline.</p>
-    </a>
-    <a href="matrix-cyber/" class="chooser-card chooser-card--active">
-      <div class="chooser-card__icon">💻</div>
-      <div class="chooser-card__title" style="color: #00ff41;">Matrix / Cyber</div>
-      <p class="chooser-card__desc">Raining code canvas, CRT scanlines, glitch text, holographic 3D-tilt cards.</p>
-    </a>
-    <a href="liquid-abstract/" class="chooser-card chooser-card--active">
-      <div class="chooser-card__icon">🎨</div>
-      <div class="chooser-card__title" style="color: #c060ff;">Liquid Abstract</div>
-      <p class="chooser-card__desc">Fluid gradient canvas, morphing blobs, conic-gradient hover, abstract art aesthetic.</p>
-    </a>
-  </div>
-
-  <p class="chooser-footer">&copy; <script>document.write(new Date().getFullYear())</script> Raymond Ariwoola</p>
-  <link rel="stylesheet" href="/assets/projects-launcher.css">
-  <script src="/assets/projects-launcher.js" defer></script>
+  <iframe
+    id="experience-frame"
+    title="Raymond Ariwoola portfolio"
+    src="about:blank"></iframe>
 </body>
 </html>
