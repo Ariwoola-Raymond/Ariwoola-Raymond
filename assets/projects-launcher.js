@@ -17,10 +17,16 @@
     /* ── Edit this list to manage launcher entries ── */
     const PROJECTS = [
         {
-            title: 'The Clock Game',
+            title: 'Chronos Strike',
             desc: 'A reflex-based timing challenge — stop the clock at the right moment.',
             url: 'https://raymondariwoola.github.io/TheClockGame/GameMode/index.html',
             icon: '⏱️'
+        },
+       { 
+            title: 'Pinpoint',
+            desc: 'Pinpoint! is a mobile-first social number deduction game.',
+            url: 'https://pinpoint.raymondariwoola.com/',
+            icon: '🔢'
         },
         {
             title: 'Clock Quest',
@@ -28,12 +34,12 @@
             url: 'https://raymondariwoola.github.io/TheClockGame/',
             icon: '🕰️'
         },
-            { 
-            title: 'Little Learners',
-            desc: 'A progressive web app for toddlers and early learners (ages 2–6). Hoot the owl guides children through interactive lessons in letters, numbers, colours, animals, shapes, and more.',
-            url: 'https://raymondariwoola.github.io/LittleLearners/',
-            icon: '🦉'
-        },
+        //     { 
+        //     title: 'Little Learners',
+        //     desc: 'A progressive web app for toddlers and early learners (ages 2–6). Hoot the owl guides children through interactive lessons in letters, numbers, colours, animals, shapes, and more.',
+        //     url: 'https://raymondariwoola.github.io/LittleLearners/',
+        //     icon: '🦉'
+        // },
             { 
             title: 'Psych Lab',
             desc: 'Interactive experiments from game theory, behavioural economics and cognitive psychology and a profile built from how you actually play',
