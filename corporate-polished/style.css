@@ -1249,6 +1249,7 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+  .about__image { max-width: 100%; }
   .section { padding: 72px 0; }
   .container { padding: 0 24px; }
   .nav__container { padding: 0 24px; }

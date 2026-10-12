@@ -114,7 +114,7 @@
 
   /* ----- Typing Effect ----- */
   var titles = [
-    'People & Culture Leader',
+    'Technology & People Transformation Leader',
     'Digital Transformation Expert',
     'Knowledge Management Strategist',
     'Learning & Development Innovator',

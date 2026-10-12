@@ -1403,6 +1403,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .about__image { max-width: 100%; }
   .section {
     padding: 72px 0;
   }
