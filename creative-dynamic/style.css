@@ -1286,6 +1286,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact__cta {
   margin-top: 8px;
+  width: min(100%, 32rem);
+  text-align: center;
 }
 
 /* ===========================
